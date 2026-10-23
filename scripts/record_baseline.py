@@ -24,6 +24,8 @@ def main():
         observed={c['classname'] for c in r['cases']}
         candidates={c['name'] for c in inventory['candidateClasses']}
         row={k:r[k] for k in ['id','run','status','exitCode','elapsedSeconds','counts']}
+        for key in ['executionMode','selectedClasses','classResults']:
+            if key in r: row[key]=r[key]
         row['upstreamCandidateClasses']=len(candidates)
         row['unobservedCandidateClasses']=sorted(candidates-observed)
         row['selection']=suite.get('officialSelection') or suite.get('factory') or suite.get('signature') or 'All inventoried concrete test classes'

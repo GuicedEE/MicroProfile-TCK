@@ -1,6 +1,6 @@
 # TCK work register
 
-All items are OPEN. This phase establishes tests and evidence only; no GuicedEE implementation fixes were made.
+Items remain OPEN except the timeout scheduling mitigation described under HARNESS-005. This phase establishes tests and evidence only; no GuicedEE implementation fixes were made.
 
 The [machine-readable findings](baseline-2026-10-23/findings.json) retain exception signatures and affected tests. These grouped investigations do not presume every failure is a GuicedEE defect.
 
@@ -10,7 +10,7 @@ The [machine-readable findings](baseline-2026-10-23/findings.json) retain except
 | HARNESS-002 | CDI Lite porting | Official suite cannot initialize: no org.jboss.cdi.tck.spi.Beans implementation. | Implement the vendor porting SPI using actual GuicedEE introspection; determine Contexts/EL support. Do not use Weld as a substitute. |
 | HARNESS-003 | Web deployment | Root HTTP context; full archive context paths, web.xml and Servlet semantics are not implemented. | Validate fixture hosting against actual GuicedEE routing; distinguish unsupported contracts from adapter defects. |
 | HARNESS-004 | Execution mode | Baseline runs on the classpath; GuicedEE also declares providers in JPMS descriptors. | Establish a JPMS runtime lane before attributing classpath packaging failures to application semantics. |
-| HARNESS-005 | Fork timeout enforcement | REST Client ReactiveStreamsPublisherTckTest exceeded the effective 240-second fork limit. Its specific JVM was stopped after thread capture; the class remains incomplete. Raw publisher-timeout.txt and publisher-timeout-threads.log record this intervention. | Verify timeout enforcement and SSE fixture hosting before a complete rerun. No test was excluded from selection. |
+| HARNESS-005 | Fork timeout enforcement, MITIGATED | The original REST Client publisher fork exceeded 240 seconds; hosted execution also reached its suite deadline. Class mode now uses one externally bounded Maven process per inventoried class and continues after a timeout. See the [execution follow-up](execution-followup-2026-10-23/README.md). | SSE fixture hosting and assertions remain OPEN. A timeout is an incomplete class, never a pass. This scheduling mitigation does not provide archive isolation. |
 | RUNTIME-001 | CDI/Guice startup | MissingScopeAnnotation for jakarta.inject.Singleton and jakarta.enterprise.context.ApplicationScoped. ScopeAnnotationProvider is declared in CDI module-info but absent from its META-INF/services directory. | Reproduce in the intended packaged runtime with isolated deployments; determine whether dual registration is required. No registration changed here. |
 | RUNTIME-002 | Reactive Streams Operators | Upstream factory cannot obtain a ReactiveStreamsEngine from ServiceLoader. | Establish intended support; this engine contract differs from ordinary Reactive Streams interfaces. |
 | RUNTIME-003 | JSON-B | Tests report missing org.eclipse.yasson.JsonBindingProvider; no replacement provider added. | Determine intended JSON-B support; Jackson representation support alone does not establish it. |

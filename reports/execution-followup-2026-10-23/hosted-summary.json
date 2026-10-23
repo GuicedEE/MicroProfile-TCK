@@ -1,0 +1,298 @@
+{
+  "run": {
+    "headSha": "c4ed2426a42bcc3a5bc869f44617f9c543fee457",
+    "conclusion": "failure",
+    "url": "https://github.com/GuicedEE/MicroProfile-TCK/actions/runs/39985709735",
+    "createdAt": "2026-10-23T16:18:37Z",
+    "updatedAt": "2026-10-23T16:58:42Z"
+  },
+  "suites": [
+    {
+      "id": "config",
+      "status": "FAILED",
+      "counts": {
+        "passed": 0,
+        "failed": 34,
+        "skipped": 779
+      },
+      "exitCode": 1,
+      "elapsedSeconds": 228.13
+    },
+    {
+      "id": "health",
+      "status": "FAILED",
+      "counts": {
+        "passed": 0,
+        "failed": 20,
+        "skipped": 84
+      },
+      "exitCode": 1,
+      "elapsedSeconds": 137.9
+    },
+    {
+      "id": "fault-tolerance",
+      "status": "FAILED",
+      "counts": {
+        "passed": 0,
+        "failed": 117,
+        "skipped": 1019
+      },
+      "exitCode": 1,
+      "elapsedSeconds": 655.13
+    },
+    {
+      "id": "jwt",
+      "status": "FAILED",
+      "counts": {
+        "passed": 41,
+        "failed": 42,
+        "skipped": 332
+      },
+      "exitCode": 1,
+      "elapsedSeconds": 114.71
+    },
+    {
+      "id": "openapi",
+      "status": "FAILED",
+      "counts": {
+        "passed": 0,
+        "failed": 27,
+        "skipped": 645
+      },
+      "exitCode": 1,
+      "elapsedSeconds": 194.47
+    },
+    {
+      "id": "rest-client",
+      "status": "TIMED_OUT",
+      "counts": {
+        "passed": 0,
+        "failed": 58,
+        "skipped": 361
+      },
+      "exitCode": 124,
+      "elapsedSeconds": 1800.45
+    },
+    {
+      "id": "context-propagation",
+      "status": "FAILED",
+      "counts": {
+        "passed": 0,
+        "failed": 5,
+        "skipped": 72
+      },
+      "exitCode": 1,
+      "elapsedSeconds": 28.26
+    },
+    {
+      "id": "graphql",
+      "status": "FAILED",
+      "counts": {
+        "passed": 0,
+        "failed": 1,
+        "skipped": 310
+      },
+      "exitCode": 1,
+      "elapsedSeconds": 11.97
+    },
+    {
+      "id": "reactive-messaging",
+      "status": "FAILED",
+      "counts": {
+        "passed": 0,
+        "failed": 48,
+        "skipped": 0
+      },
+      "exitCode": 1,
+      "elapsedSeconds": 170.6
+    },
+    {
+      "id": "reactive-streams",
+      "status": "BLOCKED_NO_RESULTS",
+      "counts": {
+        "passed": 0,
+        "failed": 0,
+        "skipped": 0
+      },
+      "exitCode": 1,
+      "elapsedSeconds": 7.36
+    },
+    {
+      "id": "lra",
+      "status": "FAILED",
+      "counts": {
+        "passed": 5,
+        "failed": 8,
+        "skipped": 0
+      },
+      "exitCode": 1,
+      "elapsedSeconds": 26.1
+    },
+    {
+      "id": "metrics-api",
+      "status": "FAILED",
+      "counts": {
+        "passed": 0,
+        "failed": 40,
+        "skipped": 0
+      },
+      "exitCode": 1,
+      "elapsedSeconds": 172.64
+    },
+    {
+      "id": "metrics-rest",
+      "status": "FAILED",
+      "counts": {
+        "passed": 0,
+        "failed": 51,
+        "skipped": 0
+      },
+      "exitCode": 1,
+      "elapsedSeconds": 27.3
+    },
+    {
+      "id": "metrics-optional",
+      "status": "FAILED",
+      "counts": {
+        "passed": 0,
+        "failed": 2,
+        "skipped": 0
+      },
+      "exitCode": 1,
+      "elapsedSeconds": 8.46
+    },
+    {
+      "id": "telemetry-tracing",
+      "status": "FAILED",
+      "counts": {
+        "passed": 0,
+        "failed": 10,
+        "skipped": 36
+      },
+      "exitCode": 1,
+      "elapsedSeconds": 66.02
+    },
+    {
+      "id": "telemetry-metrics",
+      "status": "FAILED",
+      "counts": {
+        "passed": 0,
+        "failed": 15,
+        "skipped": 54
+      },
+      "exitCode": 1,
+      "elapsedSeconds": 81.14
+    },
+    {
+      "id": "telemetry-logs",
+      "status": "FAILED",
+      "counts": {
+        "passed": 0,
+        "failed": 2,
+        "skipped": 6
+      },
+      "exitCode": 1,
+      "elapsedSeconds": 12.13
+    },
+    {
+      "id": "core-profile",
+      "status": "FAILED",
+      "counts": {
+        "passed": 0,
+        "failed": 4,
+        "skipped": 0
+      },
+      "exitCode": 1,
+      "elapsedSeconds": 29.76
+    },
+    {
+      "id": "cdi-lite",
+      "status": "BLOCKED_NO_RESULTS",
+      "counts": {
+        "passed": 0,
+        "failed": 0,
+        "skipped": 0
+      },
+      "exitCode": 1,
+      "elapsedSeconds": 8.12
+    },
+    {
+      "id": "cdi-lang-model",
+      "status": "FAILED",
+      "counts": {
+        "passed": 0,
+        "failed": 1,
+        "skipped": 2
+      },
+      "exitCode": 1,
+      "elapsedSeconds": 7.44
+    },
+    {
+      "id": "jakarta-rest",
+      "status": "FAILED",
+      "counts": {
+        "passed": 517,
+        "failed": 660,
+        "skipped": 1
+      },
+      "exitCode": 1,
+      "elapsedSeconds": 178.02
+    },
+    {
+      "id": "jsonb",
+      "status": "FAILED",
+      "counts": {
+        "passed": 25,
+        "failed": 268,
+        "skipped": 2
+      },
+      "exitCode": 1,
+      "elapsedSeconds": 29.07
+    },
+    {
+      "id": "jsonp",
+      "status": "FAILED",
+      "counts": {
+        "passed": 18,
+        "failed": 161,
+        "skipped": 0
+      },
+      "exitCode": 1,
+      "elapsedSeconds": 19.27
+    },
+    {
+      "id": "jsonp-pluggability",
+      "status": "PASSED_DIAGNOSTIC",
+      "counts": {
+        "passed": 18,
+        "failed": 0,
+        "skipped": 0
+      },
+      "exitCode": 0,
+      "elapsedSeconds": 4.93
+    },
+    {
+      "id": "jakarta-inject",
+      "status": "FAILED",
+      "counts": {
+        "passed": 0,
+        "failed": 1,
+        "skipped": 0
+      },
+      "exitCode": 1,
+      "elapsedSeconds": 6.84
+    },
+    {
+      "id": "annotations-signature",
+      "status": "FAILED",
+      "counts": {
+        "passed": 0,
+        "failed": 1,
+        "skipped": 0
+      },
+      "exitCode": 1,
+      "elapsedSeconds": 4.31
+    }
+  ],
+  "sourceSha256": "968f51d24092c94caa64ca6bcdf2593acd6a8291e38c91923ecbbda3e6f53dfa"
+}

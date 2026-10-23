@@ -36,12 +36,16 @@ def parse_reports(reports):
     return cases,issues
 
 
-def execute(suite, run, timeout, port):
-    name=suite['id']; folder=run/name;folder.mkdir(parents=True)
+def execute(suite, run, timeout, port, test_class=None):
+    name=suite['id']; folder=run/(test_class or name);folder.mkdir(parents=True)
     reports=folder/'surefire'; log=folder/'maven.log'
     command=[shutil.which('mvn'),'-B','-ntp','-f',str(ROOT/name/'pom.xml'),'dependency:build-classpath','test',
              f'-Dmdep.outputFile={folder/"classpath.txt"}',
              f'-Dtck.reports.directory={reports}',f'-Dtck.http.port={port}']
+    if test_class:
+        # The caller compiles once before parallel class runs. Shared target output is read-only here.
+        command=[shutil.which('mvn'),'-B','-ntp','-f',str(ROOT/name/'pom.xml'),'surefire:test',
+                 f'-Dtest={test_class}',f'-Dtck.reports.directory={reports}',f'-Dtck.http.port={port}']
     start=time.monotonic()
     with log.open('w',encoding='utf-8') as stream:
         process=subprocess.Popen(command,cwd=ROOT,stdout=stream,stderr=subprocess.STDOUT,
@@ -53,8 +57,14 @@ def execute(suite, run, timeout, port):
             if os.name=='nt': subprocess.run(['taskkill','/PID',str(process.pid),'/T','/F'],stdout=stream,stderr=stream)
             else:
                 import signal
-                os.killpg(process.pid,signal.SIGTERM)
-            process.wait();code=124
+                try: os.killpg(process.pid,signal.SIGTERM)
+                except ProcessLookupError: pass
+                try: process.wait(timeout=10)
+                except subprocess.TimeoutExpired: pass
+                # Kill surviving children even if Maven already exited after TERM.
+                try: os.killpg(process.pid,signal.SIGKILL)
+                except ProcessLookupError: pass
+            process.wait(timeout=10);code=124
     cases,issues=parse_reports(reports)
     counts={s:sum(c['status']==s for c in cases) for s in ['passed','failed','skipped']}
     provenance=[]
@@ -77,20 +87,31 @@ def execute(suite, run, timeout, port):
         issues.append(dict(id='BUILD-'+name,kind='BUILD_OR_RUN_FAILURE',message='\n'.join(errors[-16:]) or status,report='maven.log'))
     row=dict(id=name,status=status,exitCode=code,elapsedSeconds=round(time.monotonic()-start,2),
              counts=counts,command=command,cases=cases,issues=issues)
+    if test_class: row['selectedClass']=test_class
     (folder/'result.json').write_text(json.dumps(row,indent=2)+'\n')
-    print(name,status,counts,flush=True)
+    print(test_class or name,status,counts,flush=True)
     return row
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--suite',action='append');parser.add_argument('--jobs',type=int,default=1)
-    parser.add_argument('--timeout',type=int,default=1800);parser.add_argument('--run-id');parser.add_argument('--port-base',type=int,default=18080);args=parser.parse_args()
+    parser.add_argument('--timeout',type=int,default=1800);parser.add_argument('--run-id');parser.add_argument('--port-base',type=int,default=18080)
+    parser.add_argument('--isolate-suite',action='append',default=[])
+    parser.add_argument('--class-timeout',type=int,default=240);parser.add_argument('--class-jobs',type=int,default=2)
+    args=parser.parse_args()
     matrix=json.loads((ROOT/'matrix.json').read_text());suites=matrix['suites']
     if args.suite:
         unknown=set(args.suite)-{r['id'] for r in suites}
         if unknown:parser.error('Unknown suites: '+','.join(sorted(unknown)))
         suites=[r for r in suites if r['id'] in args.suite]
-    if args.jobs<1 or args.timeout<1:parser.error('jobs and timeout must be positive')
-    if args.port_base<1024 or args.port_base+len(suites)>65535:parser.error('Invalid port range')
+    if min(args.jobs,args.timeout,args.class_timeout,args.class_jobs)<1:parser.error('jobs and timeout must be positive')
+    if set(args.isolate_suite)-{s['id'] for s in suites}:parser.error('Isolation suite must be in the selected matrix')
+    from run_classes import execute_classes, selections
+    inventories={r['id']:r for r in json.loads((ROOT/'reports/inventory.json').read_text())}
+    ports={};next_port=args.port_base
+    for suite in suites:
+        ports[suite['id']]=next_port
+        next_port+=len(selections(suite,inventories[suite['id']])) if suite['id'] in args.isolate_suite else 1
+    if args.port_base<1024 or next_port>65535:parser.error('Invalid port range')
     run_id=args.run_id or datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
     if Path(run_id).name!=run_id or run_id in ('.','..'):parser.error('run-id must be a directory name')
     run=ROOT/'target/runs'/run_id;run.mkdir(parents=True,exist_ok=False)
@@ -99,10 +120,12 @@ def main():
                   gitStatus=subprocess.check_output(['git','status','--porcelain'],cwd=ROOT,text=True),
                   java=subprocess.run(['java','-version'],capture_output=True,text=True).stderr,
                   maven=subprocess.run([shutil.which('mvn'),'-version'],capture_output=True,text=True).stdout,
-                  matrixSha256=hashlib.sha256((ROOT/'matrix.json').read_bytes()).hexdigest())
+                  matrixSha256=hashlib.sha256((ROOT/'matrix.json').read_bytes()).hexdigest(),
+                  isolatedSuites=args.isolate_suite,classTimeoutSeconds=args.class_timeout,classJobs=args.class_jobs)
     (run/'environment.json').write_text(json.dumps(metadata,indent=2)+'\n')
     with concurrent.futures.ThreadPoolExecutor(max_workers=args.jobs) as pool:
-        futures=[pool.submit(execute,suite,run,args.timeout,args.port_base+i) for i,suite in enumerate(suites)]
+        futures=[pool.submit(execute_classes,suite,run,args.class_timeout,ports[suite['id']],args.class_jobs)
+                 if suite['id'] in args.isolate_suite else pool.submit(execute,suite,run,args.timeout,ports[suite['id']]) for suite in suites]
         rows=[f.result() for f in futures]
     (run/'summary.json').write_text(json.dumps(rows,indent=2)+'\n')
     lines=['# TCK baseline '+run_id,'','Diagnostic results only. No GuicedEE implementation fixes applied.','',

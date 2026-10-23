@@ -26,22 +26,26 @@ python scripts/inventory.py
 python scripts/validate.py
 mvn -B -ntp -pl harness -am install -DskipTests
 mvn -B -ntp -fae test-compile
-python scripts/run_tcks.py --jobs 2
+python scripts/run_tcks.py --jobs 2 --isolate-suite rest-client
 ```
 
-The harness installation builds infrastructure only. The final command runs the actual TCKs, continues through failures, and returns nonzero for failures, timeouts, skips or missing results. Every run uses a fresh report directory. JVMs are forked per test class with a 240-second fork timeout; a suite defaults to 30 minutes. Timeouts remain failures.
+The harness installation builds infrastructure only. The final command runs the actual TCKs, continues through failures, and returns nonzero for failures, timeouts, skips or missing results. Every run uses a fresh report directory. Surefire is configured to fork per test class with a 240-second timeout, but the original REST Client run exceeded that limit. `--isolate-suite rest-client` enforces an outer process deadline for each selected class, kills that process tree on timeout, and continues through the full inventory. Other suites default to a 30-minute deadline. Timeouts remain incomplete results.
 
 ```sh
 python scripts/run_tcks.py --suite config --suite health --run-id config-health
 python scripts/run_tcks.py --suite jwt --port-base 19080 --run-id jwt-investigation
+python scripts/run_classes.py --suite rest-client --jobs 4 --timeout 240 --run-id rest-client-classes
 ```
 
 Use nonoverlapping port ranges for simultaneous runner processes. Individual suites can run with `mvn -f <suite>/pom.xml test` after installing the harness. A Maven `-Dtest=...` filter is an investigation tool, not a complete baseline.
+
+Class mode derives every selection from the inventory (or the official factory driver); it offers no arbitrary test filter. It compiles once, then runs read-only Surefire invocations with separate reports and ports. It refuses CDI's official XML/group selection and signature suites. Separate class processes improve execution bounds; they do not solve archive isolation or multi-deployment semantics within a class.
 
 ## Evidence
 
 - [Baseline results](reports/baseline-2026-10-23/README.md)
 - [Work register](reports/WORK_REGISTER.md)
+- [Execution follow-up](reports/execution-followup-2026-10-23/README.md): hosted baseline and bounded REST Client class execution.
 - Raw logs, XML, dumps, classpaths, dependency hashes and environment metadata: `target/runs/<run-id>/`.
 - GitHub Actions runs the matrix, stays red on failures, and uploads evidence even when the test step fails.
 

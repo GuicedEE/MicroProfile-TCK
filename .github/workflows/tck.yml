@@ -32,7 +32,7 @@ jobs:
           mvn -B -ntp -pl harness -am install -DskipTests
           mvn -B -ntp -fae test-compile
       - name: Run every suite and retain failures
-        run: python scripts/run_tcks.py --jobs 2 --run-id ci
+        run: python scripts/run_tcks.py --jobs 2 --run-id ci --isolate-suite rest-client
       - name: Publish job summary
         if: always()
         run: |
