@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<arquillian xmlns="http://jboss.org/schema/arquillian"><container qualifier="guicedee" default="true"><configuration><property name="host">127.0.0.1</property><property name="port">18080</property></configuration></container></arquillian>

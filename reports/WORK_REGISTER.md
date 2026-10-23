@@ -1,0 +1,27 @@
+# TCK work register
+
+All items are OPEN. This phase establishes tests and evidence only; no GuicedEE implementation fixes were made.
+
+The [machine-readable findings](baseline-2026-10-23/findings.json) retain exception signatures and affected tests. These grouped investigations do not presume every failure is a GuicedEE defect.
+
+| ID | Area | Evidence / boundary | Later investigation |
+| --- | --- | --- | --- |
+| HARNESS-001 | Deployment isolation | Parent-first embedded loader; all TCK classes remain on the test classpath. Multi-deployment tests fail explicitly. | Isolated runtime processes or a verified module/classloader design; test class, resource and service-provider visibility. |
+| HARNESS-002 | CDI Lite porting | Official suite cannot initialize: no org.jboss.cdi.tck.spi.Beans implementation. | Implement the vendor porting SPI using actual GuicedEE introspection; determine Contexts/EL support. Do not use Weld as a substitute. |
+| HARNESS-003 | Web deployment | Root HTTP context; full archive context paths, web.xml and Servlet semantics are not implemented. | Validate fixture hosting against actual GuicedEE routing; distinguish unsupported contracts from adapter defects. |
+| HARNESS-004 | Execution mode | Baseline runs on the classpath; GuicedEE also declares providers in JPMS descriptors. | Establish a JPMS runtime lane before attributing classpath packaging failures to application semantics. |
+| HARNESS-005 | Fork timeout enforcement | REST Client ReactiveStreamsPublisherTckTest exceeded the effective 240-second fork limit. Its specific JVM was stopped after thread capture; the class remains incomplete. Raw publisher-timeout.txt and publisher-timeout-threads.log record this intervention. | Verify timeout enforcement and SSE fixture hosting before a complete rerun. No test was excluded from selection. |
+| RUNTIME-001 | CDI/Guice startup | MissingScopeAnnotation for jakarta.inject.Singleton and jakarta.enterprise.context.ApplicationScoped. ScopeAnnotationProvider is declared in CDI module-info but absent from its META-INF/services directory. | Reproduce in the intended packaged runtime with isolated deployments; determine whether dual registration is required. No registration changed here. |
+| RUNTIME-002 | Reactive Streams Operators | Upstream factory cannot obtain a ReactiveStreamsEngine from ServiceLoader. | Establish intended support; this engine contract differs from ordinary Reactive Streams interfaces. |
+| RUNTIME-003 | JSON-B | Tests report missing org.eclipse.yasson.JsonBindingProvider; no replacement provider added. | Determine intended JSON-B support; Jackson representation support alone does not establish it. |
+| RUNTIME-004 | Other assertions/providers | JWT, LRA, Jakarta REST, JSON-P and other suites produce individual failures; deployment failures skip dependent tests. | Triage after isolation/bootstrap boundaries; preserve original results. |
+| MATRIX-001 | Annotations baseline | Core Profile 10 signature reports jakarta.annotation.ManagedBean removed against GuicedEE Annotations 3.0. | Decide the intended platform baseline before repairs; this is an explicit version mismatch. |
+| COVERAGE-001 | Unexecuted cases | summary.json lists unobserved candidates; factories, CDI Lite groups, upstream-disabled tests and discovery errors affect execution. | Reconcile each unobserved case; separate official selections from local failures. No failure waivers. |
+
+## Later repair-phase criteria
+
+1. Preserve the baseline and upstream hashes.
+2. Resolve harness isolation and porting gaps without replacing runtime implementations.
+3. Compare per-test results on reruns.
+4. Only then make separately reviewed changes in GuicedEE implementation repositories.
+5. Compatibility requires official execution requirements and complete passing results, not a diagnostic subset.

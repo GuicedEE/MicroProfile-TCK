@@ -1,0 +1,1276 @@
+{
+  "api-harness-2026-10-23": {
+    "matrix": {
+      "schema": 1,
+      "guicedee": "2.4.1",
+      "jdk": 25,
+      "baseline": "MicroProfile 7.1 component coverage; JWT 2.2 additionally matches GuicedEE API",
+      "suites": [
+        {
+          "id": "config",
+          "group": "org.eclipse.microprofile.config",
+          "artifact": "microprofile-config-tck",
+          "version": "3.1.2",
+          "runtime": "config",
+          "engine": "testng",
+          "category": "platform",
+          "runtimeGroup": "com.guicedee.microprofile"
+        },
+        {
+          "id": "health",
+          "group": "org.eclipse.microprofile.health",
+          "artifact": "microprofile-health-tck",
+          "version": "4.0.2",
+          "runtime": "health",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "fault-tolerance",
+          "group": "org.eclipse.microprofile.fault-tolerance",
+          "artifact": "microprofile-fault-tolerance-tck",
+          "version": "4.1.2",
+          "runtime": "fault-tolerance",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "jwt",
+          "group": "org.eclipse.microprofile.jwt",
+          "artifact": "microprofile-jwt-auth-tck",
+          "version": "2.2",
+          "runtime": "jwt",
+          "engine": "testng",
+          "category": "platform",
+          "classifier": "tests",
+          "runtimeGroup": "com.guicedee.microprofile"
+        },
+        {
+          "id": "openapi",
+          "group": "org.eclipse.microprofile.openapi",
+          "artifact": "microprofile-openapi-tck",
+          "version": "4.1.1",
+          "runtime": "openapi",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "rest-client",
+          "group": "org.eclipse.microprofile.rest.client",
+          "artifact": "microprofile-rest-client-tck",
+          "version": "4.0",
+          "runtime": "rest-client",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "context-propagation",
+          "group": "org.eclipse.microprofile.context-propagation",
+          "artifact": "microprofile-context-propagation-tck",
+          "version": "1.3",
+          "runtime": "vertx",
+          "engine": "testng",
+          "category": "standalone"
+        },
+        {
+          "id": "graphql",
+          "group": "org.eclipse.microprofile.graphql",
+          "artifact": "microprofile-graphql-tck",
+          "version": "2.0",
+          "runtime": "graphql",
+          "engine": "testng",
+          "category": "standalone"
+        },
+        {
+          "id": "reactive-messaging",
+          "group": "org.eclipse.microprofile.reactive.messaging",
+          "artifact": "microprofile-reactive-messaging-tck",
+          "version": "3.0.1",
+          "runtime": "vertx",
+          "engine": "junit4",
+          "category": "standalone"
+        },
+        {
+          "id": "reactive-streams",
+          "group": "org.eclipse.microprofile.reactive-streams-operators",
+          "artifact": "microprofile-reactive-streams-operators-tck",
+          "version": "3.0.1",
+          "runtime": "vertx",
+          "engine": "testng",
+          "category": "standalone",
+          "factory": "com.guicedee.tck.ReactiveStreamsVerificationTest"
+        },
+        {
+          "id": "lra",
+          "group": "org.eclipse.microprofile.lra",
+          "artifact": "microprofile-lra-tck",
+          "version": "2.0.2",
+          "runtime": "rest",
+          "engine": "junit4",
+          "category": "standalone"
+        },
+        {
+          "id": "metrics-api",
+          "group": "org.eclipse.microprofile.metrics",
+          "artifact": "microprofile-metrics-api-tck",
+          "version": "5.1.2",
+          "runtime": "metrics",
+          "engine": "junit4",
+          "category": "legacy-standalone"
+        },
+        {
+          "id": "metrics-rest",
+          "group": "org.eclipse.microprofile.metrics",
+          "artifact": "microprofile-metrics-rest-tck",
+          "version": "5.1.2",
+          "runtime": "metrics",
+          "engine": "junit4",
+          "category": "legacy-standalone"
+        },
+        {
+          "id": "metrics-optional",
+          "group": "org.eclipse.microprofile.metrics",
+          "artifact": "microprofile-metrics-optional-tck",
+          "version": "5.1.2",
+          "runtime": "metrics",
+          "engine": "junit4",
+          "category": "legacy-standalone"
+        },
+        {
+          "id": "telemetry-tracing",
+          "group": "org.eclipse.microprofile.telemetry",
+          "artifact": "microprofile-telemetry-tracing-tck",
+          "version": "2.1",
+          "runtime": "guiced-telemetry",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "telemetry-metrics",
+          "group": "org.eclipse.microprofile.telemetry",
+          "artifact": "microprofile-telemetry-metrics-tck",
+          "version": "2.1",
+          "runtime": "guiced-telemetry",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "telemetry-logs",
+          "group": "org.eclipse.microprofile.telemetry",
+          "artifact": "microprofile-telemetry-logs-tck",
+          "version": "2.1",
+          "runtime": "guiced-telemetry",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "core-profile",
+          "group": "jakarta.ee.tck.coreprofile",
+          "artifact": "core-profile-tck-impl",
+          "version": "10.0.1",
+          "runtime": "rest",
+          "engine": "junit5",
+          "category": "jakarta-core-prerequisite",
+          "distribution": "https://download.eclipse.org/jakartaee/coreprofile/10.0/jakarta-core-profile-tck-10.0.1.zip"
+        },
+        {
+          "id": "cdi-lite",
+          "group": "jakarta.enterprise",
+          "artifact": "cdi-tck-core-impl",
+          "version": "4.0.13",
+          "runtime": "cdi",
+          "engine": "testng",
+          "category": "jakarta-core-prerequisite",
+          "officialSelection": "Core Profile 10.0.1 cdi-lite-tck-suite XML; excludes upstream cdi-full and se groups"
+        },
+        {
+          "id": "cdi-lang-model",
+          "group": "jakarta.enterprise",
+          "artifact": "cdi-tck-lang-model",
+          "version": "4.0.13",
+          "runtime": "cdi",
+          "engine": "testng",
+          "category": "jakarta-core-prerequisite",
+          "factory": "com.guicedee.tck.LanguageModelVerificationTest"
+        },
+        {
+          "id": "jakarta-rest",
+          "group": "jakarta.ws.rs",
+          "artifact": "jakarta-restful-ws-tck",
+          "version": "3.1.5",
+          "runtime": "rest",
+          "engine": "junit5",
+          "category": "jakarta-core-prerequisite"
+        },
+        {
+          "id": "jsonb",
+          "group": "jakarta.json.bind",
+          "artifact": "jakarta.json.bind-tck",
+          "version": "3.0.4",
+          "runtime": "rest",
+          "engine": "junit5",
+          "category": "jakarta-core-prerequisite"
+        },
+        {
+          "id": "jsonp",
+          "group": "jakarta.json",
+          "artifact": "jakarta.json-tck-tests",
+          "version": "2.1.1",
+          "runtime": "rest",
+          "engine": "junit5",
+          "category": "jakarta-core-prerequisite"
+        },
+        {
+          "id": "jsonp-pluggability",
+          "group": "jakarta.json",
+          "artifact": "jakarta.json-tck-tests-pluggability",
+          "version": "2.1.1",
+          "runtime": "rest",
+          "engine": "junit5",
+          "category": "jakarta-core-prerequisite"
+        },
+        {
+          "id": "jakarta-inject",
+          "group": "jakarta.inject",
+          "artifact": "jakarta.inject-tck",
+          "version": "2.0.1",
+          "runtime": "cdi",
+          "engine": "junit4",
+          "category": "jakarta-core-prerequisite",
+          "factory": "com.guicedee.tck.InjectionVerificationTest"
+        },
+        {
+          "id": "annotations-signature",
+          "group": "jakarta.annotation",
+          "artifact": "jakarta.annotation-api",
+          "version": "3.0.0",
+          "runtime": "cdi",
+          "engine": "sigtest",
+          "category": "jakarta-core-prerequisite",
+          "signature": "target/core-profile/core-profile-tck-10.0.1/artifacts/common-annotations-10.0.1-sigtest-jdk11.sig"
+        }
+      ]
+    },
+    "startedUTC": "2026-10-23T10:01:29.184877+00:00",
+    "gitHead": "4c63b6eb5d845be75fd3c0338556251488f758b7",
+    "gitStatus": "?? annotations-signature/\n?? cdi-lang-model/\n?? cdi-lite/\n?? config/\n?? context-propagation/\n?? core-profile/\n?? fault-tolerance/\n?? graphql/\n?? harness/\n?? health/\n?? jakarta-inject/\n?? jakarta-rest/\n?? jsonb/\n?? jsonp-pluggability/\n?? jsonp/\n?? jwt/\n?? lra/\n?? matrix.json\n?? metrics-api/\n?? metrics-optional/\n?? metrics-rest/\n?? openapi/\n?? pom.xml\n?? reactive-messaging/\n?? reactive-streams/\n?? reports/\n?? rest-client/\n?? scripts/\n?? telemetry-logs/\n?? telemetry-metrics/\n?? telemetry-tracing/\n",
+    "java": "java version \"25\" 2025-09-16 LTS\nJava(TM) SE Runtime Environment (build 25+37-LTS-3491)\nJava HotSpot(TM) 64-Bit Server VM (build 25+37-LTS-3491, mixed mode, sharing)\n",
+    "maven": "Apache Maven 4.0.0-rc-6 (6a8189b24518daa120539fa41ce12f2b48ec09a8)\nMaven home: C:\\Software\\maven4\nJava version: 25, vendor: Oracle Corporation, runtime: c:\\software\\jdk\\25\nDefault locale: en_ZA, platform encoding: UTF-8, time zone: Africa/Johannesburg\nOS name: \"windows 11\", version: \"10.0\", arch: \"amd64\", family: \"winnt\"\n",
+    "matrixSha256": "f397c5bed73ac100c32ff51591123ace30838fbb8bc619700847de1c6e45d256"
+  },
+  "baseline-2026-10-23": {
+    "matrix": {
+      "schema": 1,
+      "guicedee": "2.4.1",
+      "jdk": 25,
+      "baseline": "MicroProfile 7.1 component coverage; JWT 2.2 additionally matches GuicedEE API",
+      "suites": [
+        {
+          "id": "config",
+          "group": "org.eclipse.microprofile.config",
+          "artifact": "microprofile-config-tck",
+          "version": "3.1.2",
+          "runtime": "config",
+          "engine": "testng",
+          "category": "platform",
+          "runtimeGroup": "com.guicedee.microprofile"
+        },
+        {
+          "id": "health",
+          "group": "org.eclipse.microprofile.health",
+          "artifact": "microprofile-health-tck",
+          "version": "4.0.2",
+          "runtime": "health",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "fault-tolerance",
+          "group": "org.eclipse.microprofile.fault-tolerance",
+          "artifact": "microprofile-fault-tolerance-tck",
+          "version": "4.1.2",
+          "runtime": "fault-tolerance",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "jwt",
+          "group": "org.eclipse.microprofile.jwt",
+          "artifact": "microprofile-jwt-auth-tck",
+          "version": "2.2",
+          "runtime": "jwt",
+          "engine": "testng",
+          "category": "platform",
+          "classifier": "tests"
+        },
+        {
+          "id": "openapi",
+          "group": "org.eclipse.microprofile.openapi",
+          "artifact": "microprofile-openapi-tck",
+          "version": "4.1.1",
+          "runtime": "openapi",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "rest-client",
+          "group": "org.eclipse.microprofile.rest.client",
+          "artifact": "microprofile-rest-client-tck",
+          "version": "4.0",
+          "runtime": "rest-client",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "context-propagation",
+          "group": "org.eclipse.microprofile.context-propagation",
+          "artifact": "microprofile-context-propagation-tck",
+          "version": "1.3",
+          "runtime": "vertx",
+          "engine": "testng",
+          "category": "standalone"
+        },
+        {
+          "id": "graphql",
+          "group": "org.eclipse.microprofile.graphql",
+          "artifact": "microprofile-graphql-tck",
+          "version": "2.0",
+          "runtime": "graphql",
+          "engine": "testng",
+          "category": "standalone"
+        },
+        {
+          "id": "reactive-messaging",
+          "group": "org.eclipse.microprofile.reactive.messaging",
+          "artifact": "microprofile-reactive-messaging-tck",
+          "version": "3.0.1",
+          "runtime": "vertx",
+          "engine": "junit4",
+          "category": "standalone"
+        },
+        {
+          "id": "reactive-streams",
+          "group": "org.eclipse.microprofile.reactive-streams-operators",
+          "artifact": "microprofile-reactive-streams-operators-tck",
+          "version": "3.0.1",
+          "runtime": "vertx",
+          "engine": "testng",
+          "category": "standalone",
+          "factory": "com.guicedee.tck.ReactiveStreamsVerificationTest"
+        },
+        {
+          "id": "lra",
+          "group": "org.eclipse.microprofile.lra",
+          "artifact": "microprofile-lra-tck",
+          "version": "2.0.2",
+          "runtime": "rest",
+          "engine": "junit4",
+          "category": "standalone"
+        },
+        {
+          "id": "metrics-api",
+          "group": "org.eclipse.microprofile.metrics",
+          "artifact": "microprofile-metrics-api-tck",
+          "version": "5.1.2",
+          "runtime": "metrics",
+          "engine": "testng",
+          "category": "legacy-standalone"
+        },
+        {
+          "id": "metrics-rest",
+          "group": "org.eclipse.microprofile.metrics",
+          "artifact": "microprofile-metrics-rest-tck",
+          "version": "5.1.2",
+          "runtime": "metrics",
+          "engine": "testng",
+          "category": "legacy-standalone"
+        },
+        {
+          "id": "metrics-optional",
+          "group": "org.eclipse.microprofile.metrics",
+          "artifact": "microprofile-metrics-optional-tck",
+          "version": "5.1.2",
+          "runtime": "metrics",
+          "engine": "testng",
+          "category": "legacy-standalone"
+        },
+        {
+          "id": "telemetry-tracing",
+          "group": "org.eclipse.microprofile.telemetry",
+          "artifact": "microprofile-telemetry-tracing-tck",
+          "version": "2.1",
+          "runtime": "guiced-telemetry",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "telemetry-metrics",
+          "group": "org.eclipse.microprofile.telemetry",
+          "artifact": "microprofile-telemetry-metrics-tck",
+          "version": "2.1",
+          "runtime": "guiced-telemetry",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "telemetry-logs",
+          "group": "org.eclipse.microprofile.telemetry",
+          "artifact": "microprofile-telemetry-logs-tck",
+          "version": "2.1",
+          "runtime": "guiced-telemetry",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "core-profile",
+          "group": "jakarta.ee.tck.coreprofile",
+          "artifact": "core-profile-tck-impl",
+          "version": "10.0.1",
+          "runtime": "rest",
+          "engine": "junit5",
+          "category": "jakarta-core-prerequisite",
+          "distribution": "https://download.eclipse.org/jakartaee/coreprofile/10.0/jakarta-core-profile-tck-10.0.1.zip"
+        },
+        {
+          "id": "cdi-lite",
+          "group": "jakarta.enterprise",
+          "artifact": "cdi-tck-core-impl",
+          "version": "4.0.13",
+          "runtime": "cdi",
+          "engine": "testng",
+          "category": "jakarta-core-prerequisite",
+          "officialSelection": "Core Profile 10.0.1 cdi-lite-tck-suite XML; excludes upstream cdi-full and se groups"
+        },
+        {
+          "id": "cdi-lang-model",
+          "group": "jakarta.enterprise",
+          "artifact": "cdi-tck-lang-model",
+          "version": "4.0.13",
+          "runtime": "cdi",
+          "engine": "testng",
+          "category": "jakarta-core-prerequisite",
+          "factory": "com.guicedee.tck.LanguageModelVerificationTest"
+        },
+        {
+          "id": "jakarta-rest",
+          "group": "jakarta.ws.rs",
+          "artifact": "jakarta-restful-ws-tck",
+          "version": "3.1.5",
+          "runtime": "rest",
+          "engine": "junit5",
+          "category": "jakarta-core-prerequisite"
+        },
+        {
+          "id": "jsonb",
+          "group": "jakarta.json.bind",
+          "artifact": "jakarta.json.bind-tck",
+          "version": "3.0.4",
+          "runtime": "rest",
+          "engine": "junit5",
+          "category": "jakarta-core-prerequisite"
+        },
+        {
+          "id": "jsonp",
+          "group": "jakarta.json",
+          "artifact": "jakarta.json-tck-tests",
+          "version": "2.1.1",
+          "runtime": "rest",
+          "engine": "junit5",
+          "category": "jakarta-core-prerequisite"
+        },
+        {
+          "id": "jsonp-pluggability",
+          "group": "jakarta.json",
+          "artifact": "jakarta.json-tck-tests-pluggability",
+          "version": "2.1.1",
+          "runtime": "rest",
+          "engine": "junit5",
+          "category": "jakarta-core-prerequisite"
+        }
+      ]
+    },
+    "startedUTC": "2026-10-23T09:53:21.257578+00:00",
+    "gitHead": "4c63b6eb5d845be75fd3c0338556251488f758b7",
+    "gitStatus": "?? cdi-lang-model/\n?? cdi-lite/\n?? config/\n?? context-propagation/\n?? core-profile/\n?? fault-tolerance/\n?? graphql/\n?? harness/\n?? health/\n?? jakarta-rest/\n?? jsonb/\n?? jsonp-pluggability/\n?? jsonp/\n?? jwt/\n?? lra/\n?? matrix.json\n?? metrics-api/\n?? metrics-optional/\n?? metrics-rest/\n?? openapi/\n?? pom.xml\n?? reactive-messaging/\n?? reactive-streams/\n?? reports/\n?? rest-client/\n?? scripts/\n?? telemetry-logs/\n?? telemetry-metrics/\n?? telemetry-tracing/\n",
+    "java": "java version \"25\" 2025-09-16 LTS\nJava(TM) SE Runtime Environment (build 25+37-LTS-3491)\nJava HotSpot(TM) 64-Bit Server VM (build 25+37-LTS-3491, mixed mode, sharing)\n",
+    "maven": "Apache Maven 4.0.0-rc-6 (6a8189b24518daa120539fa41ce12f2b48ec09a8)\nMaven home: C:\\Software\\maven4\nJava version: 25, vendor: Oracle Corporation, runtime: c:\\software\\jdk\\25\nDefault locale: en_ZA, platform encoding: UTF-8, time zone: Africa/Johannesburg\nOS name: \"windows 11\", version: \"10.0\", arch: \"amd64\", family: \"winnt\"\n",
+    "matrixSha256": "39fef3eedd23fe665cbccdfb8071a2cdf617472441f1cdcfabec7b61e88bff09"
+  },
+  "core-harness-2026-10-23": {
+    "matrix": {
+      "schema": 1,
+      "guicedee": "2.4.1",
+      "jdk": 25,
+      "baseline": "MicroProfile 7.1 component coverage; JWT 2.2 additionally matches GuicedEE API",
+      "suites": [
+        {
+          "id": "config",
+          "group": "org.eclipse.microprofile.config",
+          "artifact": "microprofile-config-tck",
+          "version": "3.1.2",
+          "runtime": "config",
+          "engine": "testng",
+          "category": "platform",
+          "runtimeGroup": "com.guicedee.microprofile"
+        },
+        {
+          "id": "health",
+          "group": "org.eclipse.microprofile.health",
+          "artifact": "microprofile-health-tck",
+          "version": "4.0.2",
+          "runtime": "health",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "fault-tolerance",
+          "group": "org.eclipse.microprofile.fault-tolerance",
+          "artifact": "microprofile-fault-tolerance-tck",
+          "version": "4.1.2",
+          "runtime": "fault-tolerance",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "jwt",
+          "group": "org.eclipse.microprofile.jwt",
+          "artifact": "microprofile-jwt-auth-tck",
+          "version": "2.2",
+          "runtime": "jwt",
+          "engine": "testng",
+          "category": "platform",
+          "classifier": "tests",
+          "runtimeGroup": "com.guicedee.microprofile"
+        },
+        {
+          "id": "openapi",
+          "group": "org.eclipse.microprofile.openapi",
+          "artifact": "microprofile-openapi-tck",
+          "version": "4.1.1",
+          "runtime": "openapi",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "rest-client",
+          "group": "org.eclipse.microprofile.rest.client",
+          "artifact": "microprofile-rest-client-tck",
+          "version": "4.0",
+          "runtime": "rest-client",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "context-propagation",
+          "group": "org.eclipse.microprofile.context-propagation",
+          "artifact": "microprofile-context-propagation-tck",
+          "version": "1.3",
+          "runtime": "vertx",
+          "engine": "testng",
+          "category": "standalone"
+        },
+        {
+          "id": "graphql",
+          "group": "org.eclipse.microprofile.graphql",
+          "artifact": "microprofile-graphql-tck",
+          "version": "2.0",
+          "runtime": "graphql",
+          "engine": "testng",
+          "category": "standalone"
+        },
+        {
+          "id": "reactive-messaging",
+          "group": "org.eclipse.microprofile.reactive.messaging",
+          "artifact": "microprofile-reactive-messaging-tck",
+          "version": "3.0.1",
+          "runtime": "vertx",
+          "engine": "junit4",
+          "category": "standalone"
+        },
+        {
+          "id": "reactive-streams",
+          "group": "org.eclipse.microprofile.reactive-streams-operators",
+          "artifact": "microprofile-reactive-streams-operators-tck",
+          "version": "3.0.1",
+          "runtime": "vertx",
+          "engine": "testng",
+          "category": "standalone",
+          "factory": "com.guicedee.tck.ReactiveStreamsVerificationTest"
+        },
+        {
+          "id": "lra",
+          "group": "org.eclipse.microprofile.lra",
+          "artifact": "microprofile-lra-tck",
+          "version": "2.0.2",
+          "runtime": "rest",
+          "engine": "junit4",
+          "category": "standalone"
+        },
+        {
+          "id": "metrics-api",
+          "group": "org.eclipse.microprofile.metrics",
+          "artifact": "microprofile-metrics-api-tck",
+          "version": "5.1.2",
+          "runtime": "metrics",
+          "engine": "junit4",
+          "category": "legacy-standalone"
+        },
+        {
+          "id": "metrics-rest",
+          "group": "org.eclipse.microprofile.metrics",
+          "artifact": "microprofile-metrics-rest-tck",
+          "version": "5.1.2",
+          "runtime": "metrics",
+          "engine": "junit4",
+          "category": "legacy-standalone"
+        },
+        {
+          "id": "metrics-optional",
+          "group": "org.eclipse.microprofile.metrics",
+          "artifact": "microprofile-metrics-optional-tck",
+          "version": "5.1.2",
+          "runtime": "metrics",
+          "engine": "junit4",
+          "category": "legacy-standalone"
+        },
+        {
+          "id": "telemetry-tracing",
+          "group": "org.eclipse.microprofile.telemetry",
+          "artifact": "microprofile-telemetry-tracing-tck",
+          "version": "2.1",
+          "runtime": "guiced-telemetry",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "telemetry-metrics",
+          "group": "org.eclipse.microprofile.telemetry",
+          "artifact": "microprofile-telemetry-metrics-tck",
+          "version": "2.1",
+          "runtime": "guiced-telemetry",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "telemetry-logs",
+          "group": "org.eclipse.microprofile.telemetry",
+          "artifact": "microprofile-telemetry-logs-tck",
+          "version": "2.1",
+          "runtime": "guiced-telemetry",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "core-profile",
+          "group": "jakarta.ee.tck.coreprofile",
+          "artifact": "core-profile-tck-impl",
+          "version": "10.0.1",
+          "runtime": "rest",
+          "engine": "junit5",
+          "category": "jakarta-core-prerequisite",
+          "distribution": "https://download.eclipse.org/jakartaee/coreprofile/10.0/jakarta-core-profile-tck-10.0.1.zip"
+        },
+        {
+          "id": "cdi-lite",
+          "group": "jakarta.enterprise",
+          "artifact": "cdi-tck-core-impl",
+          "version": "4.0.13",
+          "runtime": "cdi",
+          "engine": "testng",
+          "category": "jakarta-core-prerequisite",
+          "officialSelection": "Core Profile 10.0.1 cdi-lite-tck-suite XML; excludes upstream cdi-full and se groups"
+        },
+        {
+          "id": "cdi-lang-model",
+          "group": "jakarta.enterprise",
+          "artifact": "cdi-tck-lang-model",
+          "version": "4.0.13",
+          "runtime": "cdi",
+          "engine": "testng",
+          "category": "jakarta-core-prerequisite",
+          "factory": "com.guicedee.tck.LanguageModelVerificationTest"
+        },
+        {
+          "id": "jakarta-rest",
+          "group": "jakarta.ws.rs",
+          "artifact": "jakarta-restful-ws-tck",
+          "version": "3.1.5",
+          "runtime": "rest",
+          "engine": "junit5",
+          "category": "jakarta-core-prerequisite"
+        },
+        {
+          "id": "jsonb",
+          "group": "jakarta.json.bind",
+          "artifact": "jakarta.json.bind-tck",
+          "version": "3.0.4",
+          "runtime": "rest",
+          "engine": "junit5",
+          "category": "jakarta-core-prerequisite"
+        },
+        {
+          "id": "jsonp",
+          "group": "jakarta.json",
+          "artifact": "jakarta.json-tck-tests",
+          "version": "2.1.1",
+          "runtime": "rest",
+          "engine": "junit5",
+          "category": "jakarta-core-prerequisite"
+        },
+        {
+          "id": "jsonp-pluggability",
+          "group": "jakarta.json",
+          "artifact": "jakarta.json-tck-tests-pluggability",
+          "version": "2.1.1",
+          "runtime": "rest",
+          "engine": "junit5",
+          "category": "jakarta-core-prerequisite"
+        },
+        {
+          "id": "jakarta-inject",
+          "group": "jakarta.inject",
+          "artifact": "jakarta.inject-tck",
+          "version": "2.0.1",
+          "runtime": "cdi",
+          "engine": "junit4",
+          "category": "jakarta-core-prerequisite",
+          "factory": "com.guicedee.tck.InjectionVerificationTest"
+        },
+        {
+          "id": "annotations-signature",
+          "group": "jakarta.annotation",
+          "artifact": "jakarta.annotation-api",
+          "version": "3.0.0",
+          "runtime": "cdi",
+          "engine": "sigtest",
+          "category": "jakarta-core-prerequisite",
+          "signature": "target/core-profile/core-profile-tck-10.0.1/artifacts/common-annotations-10.0.1-sigtest-jdk11.sig"
+        }
+      ]
+    },
+    "startedUTC": "2026-10-23T09:59:40.853783+00:00",
+    "gitHead": "4c63b6eb5d845be75fd3c0338556251488f758b7",
+    "gitStatus": "?? annotations-signature/\n?? cdi-lang-model/\n?? cdi-lite/\n?? config/\n?? context-propagation/\n?? core-profile/\n?? fault-tolerance/\n?? graphql/\n?? harness/\n?? health/\n?? jakarta-inject/\n?? jakarta-rest/\n?? jsonb/\n?? jsonp-pluggability/\n?? jsonp/\n?? jwt/\n?? lra/\n?? matrix.json\n?? metrics-api/\n?? metrics-optional/\n?? metrics-rest/\n?? openapi/\n?? pom.xml\n?? reactive-messaging/\n?? reactive-streams/\n?? reports/\n?? rest-client/\n?? scripts/\n?? telemetry-logs/\n?? telemetry-metrics/\n?? telemetry-tracing/\n",
+    "java": "java version \"25\" 2025-09-16 LTS\nJava(TM) SE Runtime Environment (build 25+37-LTS-3491)\nJava HotSpot(TM) 64-Bit Server VM (build 25+37-LTS-3491, mixed mode, sharing)\n",
+    "maven": "Apache Maven 4.0.0-rc-6 (6a8189b24518daa120539fa41ce12f2b48ec09a8)\nMaven home: C:\\Software\\maven4\nJava version: 25, vendor: Oracle Corporation, runtime: c:\\software\\jdk\\25\nDefault locale: en_ZA, platform encoding: UTF-8, time zone: Africa/Johannesburg\nOS name: \"windows 11\", version: \"10.0\", arch: \"amd64\", family: \"winnt\"\n",
+    "matrixSha256": "f397c5bed73ac100c32ff51591123ace30838fbb8bc619700847de1c6e45d256"
+  },
+  "harness-corrections-v2-2026-10-23": {
+    "matrix": {
+      "schema": 1,
+      "guicedee": "2.4.1",
+      "jdk": 25,
+      "baseline": "MicroProfile 7.1 component coverage; JWT 2.2 additionally matches GuicedEE API",
+      "suites": [
+        {
+          "id": "config",
+          "group": "org.eclipse.microprofile.config",
+          "artifact": "microprofile-config-tck",
+          "version": "3.1.2",
+          "runtime": "config",
+          "engine": "testng",
+          "category": "platform",
+          "runtimeGroup": "com.guicedee.microprofile"
+        },
+        {
+          "id": "health",
+          "group": "org.eclipse.microprofile.health",
+          "artifact": "microprofile-health-tck",
+          "version": "4.0.2",
+          "runtime": "health",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "fault-tolerance",
+          "group": "org.eclipse.microprofile.fault-tolerance",
+          "artifact": "microprofile-fault-tolerance-tck",
+          "version": "4.1.2",
+          "runtime": "fault-tolerance",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "jwt",
+          "group": "org.eclipse.microprofile.jwt",
+          "artifact": "microprofile-jwt-auth-tck",
+          "version": "2.2",
+          "runtime": "jwt",
+          "engine": "testng",
+          "category": "platform",
+          "classifier": "tests",
+          "runtimeGroup": "com.guicedee.microprofile"
+        },
+        {
+          "id": "openapi",
+          "group": "org.eclipse.microprofile.openapi",
+          "artifact": "microprofile-openapi-tck",
+          "version": "4.1.1",
+          "runtime": "openapi",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "rest-client",
+          "group": "org.eclipse.microprofile.rest.client",
+          "artifact": "microprofile-rest-client-tck",
+          "version": "4.0",
+          "runtime": "rest-client",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "context-propagation",
+          "group": "org.eclipse.microprofile.context-propagation",
+          "artifact": "microprofile-context-propagation-tck",
+          "version": "1.3",
+          "runtime": "vertx",
+          "engine": "testng",
+          "category": "standalone"
+        },
+        {
+          "id": "graphql",
+          "group": "org.eclipse.microprofile.graphql",
+          "artifact": "microprofile-graphql-tck",
+          "version": "2.0",
+          "runtime": "graphql",
+          "engine": "testng",
+          "category": "standalone"
+        },
+        {
+          "id": "reactive-messaging",
+          "group": "org.eclipse.microprofile.reactive.messaging",
+          "artifact": "microprofile-reactive-messaging-tck",
+          "version": "3.0.1",
+          "runtime": "vertx",
+          "engine": "junit4",
+          "category": "standalone"
+        },
+        {
+          "id": "reactive-streams",
+          "group": "org.eclipse.microprofile.reactive-streams-operators",
+          "artifact": "microprofile-reactive-streams-operators-tck",
+          "version": "3.0.1",
+          "runtime": "vertx",
+          "engine": "testng",
+          "category": "standalone",
+          "factory": "com.guicedee.tck.ReactiveStreamsVerificationTest"
+        },
+        {
+          "id": "lra",
+          "group": "org.eclipse.microprofile.lra",
+          "artifact": "microprofile-lra-tck",
+          "version": "2.0.2",
+          "runtime": "rest",
+          "engine": "junit4",
+          "category": "standalone"
+        },
+        {
+          "id": "metrics-api",
+          "group": "org.eclipse.microprofile.metrics",
+          "artifact": "microprofile-metrics-api-tck",
+          "version": "5.1.2",
+          "runtime": "metrics",
+          "engine": "junit4",
+          "category": "legacy-standalone"
+        },
+        {
+          "id": "metrics-rest",
+          "group": "org.eclipse.microprofile.metrics",
+          "artifact": "microprofile-metrics-rest-tck",
+          "version": "5.1.2",
+          "runtime": "metrics",
+          "engine": "junit4",
+          "category": "legacy-standalone"
+        },
+        {
+          "id": "metrics-optional",
+          "group": "org.eclipse.microprofile.metrics",
+          "artifact": "microprofile-metrics-optional-tck",
+          "version": "5.1.2",
+          "runtime": "metrics",
+          "engine": "junit4",
+          "category": "legacy-standalone"
+        },
+        {
+          "id": "telemetry-tracing",
+          "group": "org.eclipse.microprofile.telemetry",
+          "artifact": "microprofile-telemetry-tracing-tck",
+          "version": "2.1",
+          "runtime": "guiced-telemetry",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "telemetry-metrics",
+          "group": "org.eclipse.microprofile.telemetry",
+          "artifact": "microprofile-telemetry-metrics-tck",
+          "version": "2.1",
+          "runtime": "guiced-telemetry",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "telemetry-logs",
+          "group": "org.eclipse.microprofile.telemetry",
+          "artifact": "microprofile-telemetry-logs-tck",
+          "version": "2.1",
+          "runtime": "guiced-telemetry",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "core-profile",
+          "group": "jakarta.ee.tck.coreprofile",
+          "artifact": "core-profile-tck-impl",
+          "version": "10.0.1",
+          "runtime": "rest",
+          "engine": "junit5",
+          "category": "jakarta-core-prerequisite",
+          "distribution": "https://download.eclipse.org/jakartaee/coreprofile/10.0/jakarta-core-profile-tck-10.0.1.zip"
+        },
+        {
+          "id": "cdi-lite",
+          "group": "jakarta.enterprise",
+          "artifact": "cdi-tck-core-impl",
+          "version": "4.0.13",
+          "runtime": "cdi",
+          "engine": "testng",
+          "category": "jakarta-core-prerequisite",
+          "officialSelection": "Core Profile 10.0.1 cdi-lite-tck-suite XML; excludes upstream cdi-full and se groups"
+        },
+        {
+          "id": "cdi-lang-model",
+          "group": "jakarta.enterprise",
+          "artifact": "cdi-tck-lang-model",
+          "version": "4.0.13",
+          "runtime": "cdi",
+          "engine": "testng",
+          "category": "jakarta-core-prerequisite",
+          "factory": "com.guicedee.tck.LanguageModelVerificationTest"
+        },
+        {
+          "id": "jakarta-rest",
+          "group": "jakarta.ws.rs",
+          "artifact": "jakarta-restful-ws-tck",
+          "version": "3.1.5",
+          "runtime": "rest",
+          "engine": "junit5",
+          "category": "jakarta-core-prerequisite"
+        },
+        {
+          "id": "jsonb",
+          "group": "jakarta.json.bind",
+          "artifact": "jakarta.json.bind-tck",
+          "version": "3.0.4",
+          "runtime": "rest",
+          "engine": "junit5",
+          "category": "jakarta-core-prerequisite"
+        },
+        {
+          "id": "jsonp",
+          "group": "jakarta.json",
+          "artifact": "jakarta.json-tck-tests",
+          "version": "2.1.1",
+          "runtime": "rest",
+          "engine": "junit5",
+          "category": "jakarta-core-prerequisite"
+        },
+        {
+          "id": "jsonp-pluggability",
+          "group": "jakarta.json",
+          "artifact": "jakarta.json-tck-tests-pluggability",
+          "version": "2.1.1",
+          "runtime": "rest",
+          "engine": "junit5",
+          "category": "jakarta-core-prerequisite"
+        },
+        {
+          "id": "jakarta-inject",
+          "group": "jakarta.inject",
+          "artifact": "jakarta.inject-tck",
+          "version": "2.0.1",
+          "runtime": "cdi",
+          "engine": "junit4",
+          "category": "jakarta-core-prerequisite",
+          "factory": "com.guicedee.tck.InjectionVerificationTest"
+        },
+        {
+          "id": "annotations-signature",
+          "group": "jakarta.annotation",
+          "artifact": "jakarta.annotation-api",
+          "version": "3.0.0",
+          "runtime": "cdi",
+          "engine": "sigtest",
+          "category": "jakarta-core-prerequisite",
+          "signature": "target/core-profile/core-profile-tck-10.0.1/artifacts/common-annotations-10.0.1-sigtest-jdk11.sig"
+        }
+      ]
+    },
+    "startedUTC": "2026-10-23T09:58:58.986549+00:00",
+    "gitHead": "4c63b6eb5d845be75fd3c0338556251488f758b7",
+    "gitStatus": "?? annotations-signature/\n?? cdi-lang-model/\n?? cdi-lite/\n?? config/\n?? context-propagation/\n?? core-profile/\n?? fault-tolerance/\n?? graphql/\n?? harness/\n?? health/\n?? jakarta-inject/\n?? jakarta-rest/\n?? jsonb/\n?? jsonp-pluggability/\n?? jsonp/\n?? jwt/\n?? lra/\n?? matrix.json\n?? metrics-api/\n?? metrics-optional/\n?? metrics-rest/\n?? openapi/\n?? pom.xml\n?? reactive-messaging/\n?? reactive-streams/\n?? reports/\n?? rest-client/\n?? scripts/\n?? telemetry-logs/\n?? telemetry-metrics/\n?? telemetry-tracing/\n",
+    "java": "java version \"25\" 2025-09-16 LTS\nJava(TM) SE Runtime Environment (build 25+37-LTS-3491)\nJava HotSpot(TM) 64-Bit Server VM (build 25+37-LTS-3491, mixed mode, sharing)\n",
+    "maven": "Apache Maven 4.0.0-rc-6 (6a8189b24518daa120539fa41ce12f2b48ec09a8)\nMaven home: C:\\Software\\maven4\nJava version: 25, vendor: Oracle Corporation, runtime: c:\\software\\jdk\\25\nDefault locale: en_ZA, platform encoding: UTF-8, time zone: Africa/Johannesburg\nOS name: \"windows 11\", version: \"10.0\", arch: \"amd64\", family: \"winnt\"\n",
+    "matrixSha256": "f397c5bed73ac100c32ff51591123ace30838fbb8bc619700847de1c6e45d256"
+  },
+  "rest-client-harness-v2-2026-10-23": {
+    "matrix": {
+      "schema": 1,
+      "guicedee": "2.4.1",
+      "jdk": 25,
+      "baseline": "MicroProfile 7.1 component coverage; JWT 2.2 additionally matches GuicedEE API",
+      "suites": [
+        {
+          "id": "config",
+          "group": "org.eclipse.microprofile.config",
+          "artifact": "microprofile-config-tck",
+          "version": "3.1.2",
+          "runtime": "config",
+          "engine": "testng",
+          "category": "platform",
+          "runtimeGroup": "com.guicedee.microprofile"
+        },
+        {
+          "id": "health",
+          "group": "org.eclipse.microprofile.health",
+          "artifact": "microprofile-health-tck",
+          "version": "4.0.2",
+          "runtime": "health",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "fault-tolerance",
+          "group": "org.eclipse.microprofile.fault-tolerance",
+          "artifact": "microprofile-fault-tolerance-tck",
+          "version": "4.1.2",
+          "runtime": "fault-tolerance",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "jwt",
+          "group": "org.eclipse.microprofile.jwt",
+          "artifact": "microprofile-jwt-auth-tck",
+          "version": "2.2",
+          "runtime": "jwt",
+          "engine": "testng",
+          "category": "platform",
+          "classifier": "tests",
+          "runtimeGroup": "com.guicedee.microprofile"
+        },
+        {
+          "id": "openapi",
+          "group": "org.eclipse.microprofile.openapi",
+          "artifact": "microprofile-openapi-tck",
+          "version": "4.1.1",
+          "runtime": "openapi",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "rest-client",
+          "group": "org.eclipse.microprofile.rest.client",
+          "artifact": "microprofile-rest-client-tck",
+          "version": "4.0",
+          "runtime": "rest-client",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "context-propagation",
+          "group": "org.eclipse.microprofile.context-propagation",
+          "artifact": "microprofile-context-propagation-tck",
+          "version": "1.3",
+          "runtime": "vertx",
+          "engine": "testng",
+          "category": "standalone"
+        },
+        {
+          "id": "graphql",
+          "group": "org.eclipse.microprofile.graphql",
+          "artifact": "microprofile-graphql-tck",
+          "version": "2.0",
+          "runtime": "graphql",
+          "engine": "testng",
+          "category": "standalone"
+        },
+        {
+          "id": "reactive-messaging",
+          "group": "org.eclipse.microprofile.reactive.messaging",
+          "artifact": "microprofile-reactive-messaging-tck",
+          "version": "3.0.1",
+          "runtime": "vertx",
+          "engine": "junit4",
+          "category": "standalone"
+        },
+        {
+          "id": "reactive-streams",
+          "group": "org.eclipse.microprofile.reactive-streams-operators",
+          "artifact": "microprofile-reactive-streams-operators-tck",
+          "version": "3.0.1",
+          "runtime": "vertx",
+          "engine": "testng",
+          "category": "standalone",
+          "factory": "com.guicedee.tck.ReactiveStreamsVerificationTest"
+        },
+        {
+          "id": "lra",
+          "group": "org.eclipse.microprofile.lra",
+          "artifact": "microprofile-lra-tck",
+          "version": "2.0.2",
+          "runtime": "rest",
+          "engine": "junit4",
+          "category": "standalone"
+        },
+        {
+          "id": "metrics-api",
+          "group": "org.eclipse.microprofile.metrics",
+          "artifact": "microprofile-metrics-api-tck",
+          "version": "5.1.2",
+          "runtime": "metrics",
+          "engine": "junit4",
+          "category": "legacy-standalone"
+        },
+        {
+          "id": "metrics-rest",
+          "group": "org.eclipse.microprofile.metrics",
+          "artifact": "microprofile-metrics-rest-tck",
+          "version": "5.1.2",
+          "runtime": "metrics",
+          "engine": "junit4",
+          "category": "legacy-standalone"
+        },
+        {
+          "id": "metrics-optional",
+          "group": "org.eclipse.microprofile.metrics",
+          "artifact": "microprofile-metrics-optional-tck",
+          "version": "5.1.2",
+          "runtime": "metrics",
+          "engine": "junit4",
+          "category": "legacy-standalone"
+        },
+        {
+          "id": "telemetry-tracing",
+          "group": "org.eclipse.microprofile.telemetry",
+          "artifact": "microprofile-telemetry-tracing-tck",
+          "version": "2.1",
+          "runtime": "guiced-telemetry",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "telemetry-metrics",
+          "group": "org.eclipse.microprofile.telemetry",
+          "artifact": "microprofile-telemetry-metrics-tck",
+          "version": "2.1",
+          "runtime": "guiced-telemetry",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "telemetry-logs",
+          "group": "org.eclipse.microprofile.telemetry",
+          "artifact": "microprofile-telemetry-logs-tck",
+          "version": "2.1",
+          "runtime": "guiced-telemetry",
+          "engine": "testng",
+          "category": "platform"
+        },
+        {
+          "id": "core-profile",
+          "group": "jakarta.ee.tck.coreprofile",
+          "artifact": "core-profile-tck-impl",
+          "version": "10.0.1",
+          "runtime": "rest",
+          "engine": "junit5",
+          "category": "jakarta-core-prerequisite",
+          "distribution": "https://download.eclipse.org/jakartaee/coreprofile/10.0/jakarta-core-profile-tck-10.0.1.zip"
+        },
+        {
+          "id": "cdi-lite",
+          "group": "jakarta.enterprise",
+          "artifact": "cdi-tck-core-impl",
+          "version": "4.0.13",
+          "runtime": "cdi",
+          "engine": "testng",
+          "category": "jakarta-core-prerequisite",
+          "officialSelection": "Core Profile 10.0.1 cdi-lite-tck-suite XML; excludes upstream cdi-full and se groups"
+        },
+        {
+          "id": "cdi-lang-model",
+          "group": "jakarta.enterprise",
+          "artifact": "cdi-tck-lang-model",
+          "version": "4.0.13",
+          "runtime": "cdi",
+          "engine": "testng",
+          "category": "jakarta-core-prerequisite",
+          "factory": "com.guicedee.tck.LanguageModelVerificationTest"
+        },
+        {
+          "id": "jakarta-rest",
+          "group": "jakarta.ws.rs",
+          "artifact": "jakarta-restful-ws-tck",
+          "version": "3.1.5",
+          "runtime": "rest",
+          "engine": "junit5",
+          "category": "jakarta-core-prerequisite"
+        },
+        {
+          "id": "jsonb",
+          "group": "jakarta.json.bind",
+          "artifact": "jakarta.json.bind-tck",
+          "version": "3.0.4",
+          "runtime": "rest",
+          "engine": "junit5",
+          "category": "jakarta-core-prerequisite"
+        },
+        {
+          "id": "jsonp",
+          "group": "jakarta.json",
+          "artifact": "jakarta.json-tck-tests",
+          "version": "2.1.1",
+          "runtime": "rest",
+          "engine": "junit5",
+          "category": "jakarta-core-prerequisite"
+        },
+        {
+          "id": "jsonp-pluggability",
+          "group": "jakarta.json",
+          "artifact": "jakarta.json-tck-tests-pluggability",
+          "version": "2.1.1",
+          "runtime": "rest",
+          "engine": "junit5",
+          "category": "jakarta-core-prerequisite"
+        },
+        {
+          "id": "jakarta-inject",
+          "group": "jakarta.inject",
+          "artifact": "jakarta.inject-tck",
+          "version": "2.0.1",
+          "runtime": "cdi",
+          "engine": "junit4",
+          "category": "jakarta-core-prerequisite",
+          "factory": "com.guicedee.tck.InjectionVerificationTest"
+        },
+        {
+          "id": "annotations-signature",
+          "group": "jakarta.annotation",
+          "artifact": "jakarta.annotation-api",
+          "version": "3.0.0",
+          "runtime": "cdi",
+          "engine": "sigtest",
+          "category": "jakarta-core-prerequisite",
+          "signature": "target/core-profile/core-profile-tck-10.0.1/artifacts/common-annotations-10.0.1-sigtest-jdk11.sig"
+        }
+      ]
+    },
+    "startedUTC": "2026-10-23T10:08:04.955590+00:00",
+    "gitHead": "4c63b6eb5d845be75fd3c0338556251488f758b7",
+    "gitStatus": "?? .github/\n?? annotations-signature/\n?? cdi-lang-model/\n?? cdi-lite/\n?? config/\n?? context-propagation/\n?? core-profile/\n?? fault-tolerance/\n?? graphql/\n?? harness/\n?? health/\n?? jakarta-inject/\n?? jakarta-rest/\n?? jsonb/\n?? jsonp-pluggability/\n?? jsonp/\n?? jwt/\n?? lra/\n?? matrix.json\n?? metrics-api/\n?? metrics-optional/\n?? metrics-rest/\n?? openapi/\n?? pom.xml\n?? reactive-messaging/\n?? reactive-streams/\n?? reports/\n?? rest-client/\n?? scripts/\n?? telemetry-logs/\n?? telemetry-metrics/\n?? telemetry-tracing/\n",
+    "java": "java version \"25\" 2025-09-16 LTS\nJava(TM) SE Runtime Environment (build 25+37-LTS-3491)\nJava HotSpot(TM) 64-Bit Server VM (build 25+37-LTS-3491, mixed mode, sharing)\n",
+    "maven": "Apache Maven 4.0.0-rc-6 (6a8189b24518daa120539fa41ce12f2b48ec09a8)\nMaven home: C:\\Software\\maven4\nJava version: 25, vendor: Oracle Corporation, runtime: c:\\software\\jdk\\25\nDefault locale: en_ZA, platform encoding: UTF-8, time zone: Africa/Johannesburg\nOS name: \"windows 11\", version: \"10.0\", arch: \"amd64\", family: \"winnt\"\n",
+    "matrixSha256": "f397c5bed73ac100c32ff51591123ace30838fbb8bc619700847de1c6e45d256"
+  }
+}

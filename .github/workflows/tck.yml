@@ -1,0 +1,49 @@
+name: MicroProfile TCK baseline
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches: [master]
+permissions:
+  contents: read
+jobs:
+  tck:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+          cache: maven
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Prepare official Core Profile artifacts
+        run: python scripts/prepare_core.py
+      - name: Verify upstream inventory
+        run: |
+          python scripts/inventory.py --output target/ci-inventory.json
+          python scripts/validate.py --inventory target/ci-inventory.json
+          python -m unittest discover -s scripts -p "test_*.py"
+      - name: Build harness and compile all test modules
+        run: |
+          mvn -B -ntp -pl harness -am install -DskipTests
+          mvn -B -ntp -fae test-compile
+      - name: Run every suite and retain failures
+        run: python scripts/run_tcks.py --jobs 2 --run-id ci
+      - name: Publish job summary
+        if: always()
+        run: |
+          if [ -f target/runs/ci/SUMMARY.md ]; then cat target/runs/ci/SUMMARY.md >> "$GITHUB_STEP_SUMMARY"; fi
+      - name: Retain test evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tck-evidence
+          path: |
+            target/runs/
+            target/ci-inventory.json
+          if-no-files-found: warn
+          retention-days: 30
