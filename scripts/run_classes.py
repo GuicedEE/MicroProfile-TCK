@@ -7,6 +7,8 @@ import json
 import shutil
 import subprocess
 import time
+import os
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 from run_tcks import ROOT, execute
@@ -16,6 +18,53 @@ def selections(suite, inventory):
     if suite.get('officialSelection') or suite.get('signature'):
         raise ValueError('Official XML/group and signature suites require run_tcks.py; class filtering would change their contract')
     return [suite['factory']] if suite.get('factory') else sorted(c['name'] for c in inventory['candidateClasses'])
+
+
+def selection_candidates(suite,inventory):
+    if suite['id']=='cdi-lite': return sorted(c['name'] for c in inventory['candidateClasses'])
+    return selections(suite,inventory)
+
+
+def split_cdi_xml(source,classes,directory):
+    paths={}
+    for name in classes:
+        tree=ET.parse(source);tests=tree.findall('test')
+        if len(tests)!=1: raise ValueError('Unsupported official CDI suite structure')
+        test=tests[0]
+        for packages in test.findall('packages'): test.remove(packages)
+        if test.find('classes') is not None: raise ValueError('Official CDI suite already contains explicit classes')
+        ET.SubElement(ET.SubElement(test,'classes'),'class',name=name)
+        path=directory/(name+'.xml')
+        tree.write(path,encoding='utf-8',xml_declaration=True)
+        paths[name]=path
+    return paths
+
+
+def discover_cdi(folder,inventory):
+    source=ROOT/'target/core-profile/core-profile-tck-10.0.1/artifacts/cdi-lite-tck-suite-10.0.1.xml'
+    classpath=os.pathsep.join([str(ROOT/'cdi-lite/target/test-classes'),str(ROOT/'cdi-lite/target/classes'),
+                              (folder/'classpath.txt').read_text().strip()])
+    selected=folder/'selected-methods.txt'
+    with (folder/'discovery.log').open('w') as stream:
+        subprocess.run(['java','-cp',classpath,'com.guicedee.tck.porting.CdiSuiteDiscovery',str(source),str(selected),
+                        str(folder/'discovery')],cwd=ROOT,stdout=stream,stderr=subprocess.STDOUT,check=True,timeout=120)
+    methods=selected.read_text().splitlines()
+    classes=sorted({m.split('#')[0] for m in methods})
+    if not classes or not set(classes)<={c['name'] for c in inventory['candidateClasses']}:
+        raise ValueError('Official CDI discovery disagrees with artifact inventory')
+    directory=folder/'suite-selection';directory.mkdir()
+    paths=split_cdi_xml(source,classes,directory)
+    partitioned=folder/'partitioned-methods.txt'
+    with (folder/'partition-discovery.log').open('w') as stream:
+        subprocess.run(['java','-cp',classpath,'com.guicedee.tck.porting.CdiSuiteDiscovery',str(directory),str(partitioned),
+                        str(folder/'partition-discovery')],cwd=ROOT,stdout=stream,stderr=subprocess.STDOUT,check=True,timeout=120)
+    if set(partitioned.read_text().splitlines())!=set(methods):
+        raise ValueError('Partitioned CDI suite does not select exactly the official method set')
+    manifest=dict(source=str(source),sourceSha256=hashlib.sha256(source.read_bytes()).hexdigest(),
+                  selectedMethods=methods,selectedClasses=classes,
+                  note='Pinned TestNG selected identical method sets from official XML and every generated class suite; interceptor prevented invocation during discovery.')
+    (folder/'selection.json').write_text(json.dumps(manifest,indent=2)+'\n')
+    return classes,paths
 
 
 def aggregate(suite, rows, elapsed):
@@ -35,9 +84,9 @@ def aggregate(suite, rows, elapsed):
                 classResults=[{k:r[k] for k in ['selectedClass','status','exitCode','counts','elapsedSeconds']} for r in rows])
 
 
-def execute_classes(suite,run,timeout,port,jobs):
+def execute_classes(suite,run,timeout,port,jobs,jvm_args_file=None):
     inventory=next(r for r in json.loads((ROOT/'reports/inventory.json').read_text()) if r['id']==suite['id'])
-    classes=selections(suite,inventory)
+    classes=selection_candidates(suite,inventory)
     folder=run/suite['id'];folder.mkdir();(folder/'classes').mkdir()
     command=[shutil.which('mvn'),'-B','-ntp','-f',str(ROOT/suite['id']/'pom.xml'),
              'dependency:build-classpath','test-compile',f'-Dmdep.outputFile={folder/"classpath.txt"}']
@@ -52,14 +101,15 @@ def execute_classes(suite,run,timeout,port,jobs):
         (folder/'result.json').write_text(json.dumps(result,indent=2)+'\n')
         return result
     artifacts=[]
-    import os
     for value in (folder/'classpath.txt').read_text().strip().split(os.pathsep):
         path=Path(value)
         if path.is_file(): artifacts.append(dict(path=str(path),sha256=hashlib.sha256(path.read_bytes()).hexdigest()))
     (folder/'artifacts.json').write_text(json.dumps(artifacts,indent=2)+'\n')
+    suite_paths={}
+    if suite['id']=='cdi-lite': classes,suite_paths=discover_cdi(folder,inventory)
     start=time.monotonic()
     with concurrent.futures.ThreadPoolExecutor(max_workers=jobs) as pool:
-        futures=[pool.submit(execute,suite,folder/'classes',timeout,port+i,name) for i,name in enumerate(classes)]
+        futures=[pool.submit(execute,suite,folder/'classes',timeout,port+i,name,suite_paths.get(name),jvm_args_file) for i,name in enumerate(classes)]
         rows=[f.result() for f in futures]
     result=aggregate(suite,rows,time.monotonic()-start)
     (folder/'result.json').write_text(json.dumps(result,indent=2)+'\n')
@@ -76,7 +126,7 @@ def main():
     suite=next((s for s in matrix['suites'] if s['id']==args.suite),None)
     if suite is None: parser.error('Unknown suite')
     inventory=next(r for r in json.loads((ROOT/'reports/inventory.json').read_text()) if r['id']==args.suite)
-    classes=selections(suite,inventory)
+    classes=selection_candidates(suite,inventory)
     if not classes or len(classes)!=len(set(classes)): parser.error('Empty or duplicate class selection')
     if args.port_base<1024 or args.port_base+len(classes)>65535: parser.error('Invalid port range')
     run=ROOT/'target/runs'/args.run_id;run.mkdir(parents=True,exist_ok=False)
@@ -86,13 +136,13 @@ def main():
                   java=subprocess.run(['java','-version'],capture_output=True,text=True).stderr,
                   maven=subprocess.run([shutil.which('mvn'),'-version'],capture_output=True,text=True).stdout,
                   matrixSha256=hashlib.sha256((ROOT/'matrix.json').read_bytes()).hexdigest(),
-                  selectedClasses=classes,classTimeoutSeconds=args.timeout)
+                  selectionCandidates=classes,classTimeoutSeconds=args.timeout)
     (run/'environment.json').write_text(json.dumps(metadata,indent=2)+'\n')
     result=execute_classes(suite,run,args.timeout,args.port_base,args.jobs)
     rows=result['classResults']
     (run/'summary.json').write_text(json.dumps([result],indent=2)+'\n')
     lines=['# Isolated class run: '+args.suite,'',
-           'Every inventoried class was selected. Timeouts and missing results remain incomplete.','',
+           'Every selected class was attempted; CDI selection preserves official groups. Timeouts and missing results remain incomplete.','',
            '| Class | Status | Passed | Failed | Skipped |','| --- | --- | ---: | ---: | ---: |']
     for r in rows: lines.append(f"| {r['selectedClass']} | {r['status']} | {r['counts']['passed']} | {r['counts']['failed']} | {r['counts']['skipped']} |")
     (run/'SUMMARY.md').write_text('\n'.join(lines)+'\n')

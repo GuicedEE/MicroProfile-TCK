@@ -1,8 +1,29 @@
 import unittest
-from run_classes import aggregate, selections
+import tempfile
+from pathlib import Path
+import xml.etree.ElementTree as ET
+from run_classes import aggregate, selections, split_cdi_xml
 
 
 class ClassExecutionTests(unittest.TestCase):
+    def test_cdi_partition_preserves_groups_listeners_and_parameters(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory);source=root/'official.xml'
+            source.write_text('<suite name="CDI"><listeners><listener class-name="Listener"/></listeners>'
+                              '<test name="Lite"><parameter name="key" value="value"/><groups><run>'
+                              '<exclude name="cdi-full"/><exclude name="se"/></run></groups>'
+                              '<packages><package name="org.jboss.cdi.tck.tests.*"/></packages></test></suite>')
+            paths=split_cdi_xml(source,['A','B'],root)
+            original=ET.parse(source)
+            for name,path in paths.items():
+                tree=ET.parse(path)
+                self.assertEqual(ET.tostring(original.find('listeners')),ET.tostring(tree.find('listeners')))
+                self.assertEqual(ET.tostring(original.find('test/groups')),ET.tostring(tree.find('test/groups')))
+                self.assertEqual(ET.tostring(original.find('test/parameter')),ET.tostring(tree.find('test/parameter')))
+                self.assertEqual([name],[c.get('name') for c in tree.findall('test/classes/class')])
+                self.assertIsNone(tree.find('test/packages'))
+            self.assertIsNotNone(ET.parse(source).find('test/packages'))
+
     def test_empty_execution_is_not_success(self):
         with self.assertRaises(ValueError): aggregate({'id':'empty'},[],0)
 

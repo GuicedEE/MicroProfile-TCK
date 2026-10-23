@@ -28,15 +28,23 @@ jobs:
           python scripts/validate.py --inventory target/ci-inventory.json
           python -m unittest discover -s scripts -p "test_*.py"
       - name: Build harness and compile all test modules
+        id: build
         run: |
-          mvn -B -ntp -pl harness -am install -DskipTests
+          mvn -B -ntp -pl harness -am install
           mvn -B -ntp -fae test-compile
+          mvn -B -ntp -f cdi-lite/pom.xml test -Dtest=com.guicedee.tck.porting.PortingContractTest
       - name: Run every suite and retain failures
-        run: python scripts/run_tcks.py --jobs 2 --run-id ci --isolate-suite rest-client
+        run: python scripts/run_tcks.py --jobs 2 --run-id ci --isolate-suite rest-client --isolate-suite cdi-lite
+      - name: Run CDI Lite with the actual JPMS runtime graph
+        if: always() && steps.build.outcome == 'success'
+        run: |
+          python scripts/prepare_jpms.py
+          python scripts/run_tcks.py --suite cdi-lite --isolate-suite cdi-lite --run-id ci-jpms --port-base 29080 --jvm-args-file target/jpms-cdi/jvm.args
       - name: Publish job summary
         if: always()
         run: |
           if [ -f target/runs/ci/SUMMARY.md ]; then cat target/runs/ci/SUMMARY.md >> "$GITHUB_STEP_SUMMARY"; fi
+          if [ -f target/runs/ci-jpms/SUMMARY.md ]; then cat target/runs/ci-jpms/SUMMARY.md >> "$GITHUB_STEP_SUMMARY"; fi
       - name: Retain test evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -45,5 +53,6 @@ jobs:
           path: |
             target/runs/
             target/ci-inventory.json
+            target/jpms-cdi/
           if-no-files-found: warn
           retention-days: 30

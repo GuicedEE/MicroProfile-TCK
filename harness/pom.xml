@@ -10,6 +10,11 @@
   <artifactId>harness</artifactId>
   <dependencies>
     <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
       <groupId>com.guicedee</groupId>
       <artifactId>inject</artifactId>
       <version>${guicedee.version}</version>

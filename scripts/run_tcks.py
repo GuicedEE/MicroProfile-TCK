@@ -36,7 +36,7 @@ def parse_reports(reports):
     return cases,issues
 
 
-def execute(suite, run, timeout, port, test_class=None):
+def execute(suite, run, timeout, port, test_class=None, suite_xml=None, jvm_args_file=None):
     name=suite['id']; folder=run/(test_class or name);folder.mkdir(parents=True)
     reports=folder/'surefire'; log=folder/'maven.log'
     command=[shutil.which('mvn'),'-B','-ntp','-f',str(ROOT/name/'pom.xml'),'dependency:build-classpath','test',
@@ -46,6 +46,10 @@ def execute(suite, run, timeout, port, test_class=None):
         # The caller compiles once before parallel class runs. Shared target output is read-only here.
         command=[shutil.which('mvn'),'-B','-ntp','-f',str(ROOT/name/'pom.xml'),'surefire:test',
                  f'-Dtest={test_class}',f'-Dtck.reports.directory={reports}',f'-Dtck.http.port={port}']
+        if suite_xml:
+            command.remove(f'-Dtest={test_class}')
+            command.append(f'-Dtck.cdi.suite={suite_xml}')
+    if jvm_args_file: command.append(f'-Dtck.jvm.args=@"{Path(jvm_args_file).as_posix()}"')
     start=time.monotonic()
     with log.open('w',encoding='utf-8') as stream:
         process=subprocess.Popen(command,cwd=ROOT,stdout=stream,stderr=subprocess.STDOUT,
@@ -97,7 +101,10 @@ def main():
     parser.add_argument('--timeout',type=int,default=1800);parser.add_argument('--run-id');parser.add_argument('--port-base',type=int,default=18080)
     parser.add_argument('--isolate-suite',action='append',default=[])
     parser.add_argument('--class-timeout',type=int,default=240);parser.add_argument('--class-jobs',type=int,default=2)
+    parser.add_argument('--jvm-args-file',type=Path)
     args=parser.parse_args()
+    if args.jvm_args_file:
+        args.jvm_args_file=args.jvm_args_file.resolve(strict=True)
     matrix=json.loads((ROOT/'matrix.json').read_text());suites=matrix['suites']
     if args.suite:
         unknown=set(args.suite)-{r['id'] for r in suites}
@@ -105,12 +112,12 @@ def main():
         suites=[r for r in suites if r['id'] in args.suite]
     if min(args.jobs,args.timeout,args.class_timeout,args.class_jobs)<1:parser.error('jobs and timeout must be positive')
     if set(args.isolate_suite)-{s['id'] for s in suites}:parser.error('Isolation suite must be in the selected matrix')
-    from run_classes import execute_classes, selections
+    from run_classes import execute_classes, selection_candidates
     inventories={r['id']:r for r in json.loads((ROOT/'reports/inventory.json').read_text())}
     ports={};next_port=args.port_base
     for suite in suites:
         ports[suite['id']]=next_port
-        next_port+=len(selections(suite,inventories[suite['id']])) if suite['id'] in args.isolate_suite else 1
+        next_port+=len(selection_candidates(suite,inventories[suite['id']])) if suite['id'] in args.isolate_suite else 1
     if args.port_base<1024 or next_port>65535:parser.error('Invalid port range')
     run_id=args.run_id or datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
     if Path(run_id).name!=run_id or run_id in ('.','..'):parser.error('run-id must be a directory name')
@@ -121,11 +128,13 @@ def main():
                   java=subprocess.run(['java','-version'],capture_output=True,text=True).stderr,
                   maven=subprocess.run([shutil.which('mvn'),'-version'],capture_output=True,text=True).stdout,
                   matrixSha256=hashlib.sha256((ROOT/'matrix.json').read_bytes()).hexdigest(),
-                  isolatedSuites=args.isolate_suite,classTimeoutSeconds=args.class_timeout,classJobs=args.class_jobs)
+                  isolatedSuites=args.isolate_suite,classTimeoutSeconds=args.class_timeout,classJobs=args.class_jobs,
+                  jvmArgumentsFile=str(args.jvm_args_file) if args.jvm_args_file else None,
+                  jvmArgumentsSha256=hashlib.sha256(args.jvm_args_file.read_bytes()).hexdigest() if args.jvm_args_file else None)
     (run/'environment.json').write_text(json.dumps(metadata,indent=2)+'\n')
     with concurrent.futures.ThreadPoolExecutor(max_workers=args.jobs) as pool:
-        futures=[pool.submit(execute_classes,suite,run,args.class_timeout,ports[suite['id']],args.class_jobs)
-                 if suite['id'] in args.isolate_suite else pool.submit(execute,suite,run,args.timeout,ports[suite['id']]) for suite in suites]
+        futures=[pool.submit(execute_classes,suite,run,args.class_timeout,ports[suite['id']],args.class_jobs,args.jvm_args_file)
+                 if suite['id'] in args.isolate_suite else pool.submit(execute,suite,run,args.timeout,ports[suite['id']],jvm_args_file=args.jvm_args_file) for suite in suites]
         rows=[f.result() for f in futures]
     (run/'summary.json').write_text(json.dumps(rows,indent=2)+'\n')
     lines=['# TCK baseline '+run_id,'','Diagnostic results only. No GuicedEE implementation fixes applied.','',

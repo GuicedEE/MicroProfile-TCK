@@ -1,0 +1,255 @@
+{
+  "roots": "com.guicedee.cdi,com.guicedee.guicedinjection",
+  "guicedeeVersion": "2.4.1",
+  "artifacts": [
+    {
+      "path": "C:/Java/DevSuite/target/project-local-repo/com.guicedee/inject/2.4.1/inject-2.4.1.jar",
+      "sha256": "640b67ddcbb8055096e8df322eadb2c07e3cdac8210a38b7fead3a40b538ce69"
+    },
+    {
+      "path": "C:/Java/DevSuite/target/project-local-repo/com.guicedee/vertx/2.4.1/vertx-2.4.1.jar",
+      "sha256": "f1b76909810685eb6edb475130da78f7d213eeea5bdbbd476b5aaf6e63736ae9"
+    },
+    {
+      "path": "C:/Java/DevSuite/target/project-local-repo/com.guicedee/client/2.4.1/client-2.4.1.jar",
+      "sha256": "2c5981adfbd5e6557f8052caafb9d60b8b9fd9850f2a84494aca5d98fa81c2c5"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/org/apache/logging/log4j/log4j-layout-template-json/2.26.1/log4j-layout-template-json-2.26.1.jar",
+      "sha256": "91783f86db7f17700e4c4b4c2a1ea14132485d4faee91a11ff62fb6320eb26f7"
+    },
+    {
+      "path": "C:/Java/DevSuite/target/project-local-repo/com.guicedee.modules.services/guice/2.4.1/guice-2.4.1.jar",
+      "sha256": "2f8502125a718a5c30ec2f4129320360fda94dca989fdd980faa085815303c62"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/org/ow2/asm/asm/9.11/asm-9.11.jar",
+      "sha256": "5fe3b469b8646e5bc53a897840952d63b712d4923d2a7a26aebc585f1fec7676"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/vertx/vertx-core/5.2.2/vertx-core-5.2.2.jar",
+      "sha256": "7d8540bfb6c3f8bc149bba86c590bf56418924d9129e995c68bc6aea9ced38f0"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/vertx/vertx-core-logging/5.2.2/vertx-core-logging-5.2.2.jar",
+      "sha256": "5f794d660f99b7f4fc801d13d663b0371fe97b0d1f92ccd5c712e8ae4a11a54c"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/netty/netty-common/4.2.19.Final/netty-common-4.2.19.Final.jar",
+      "sha256": "22fa74761f6e35c8c88972f35cf65664566b922dd73d3424528e97c34278fa79"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/netty/netty-buffer/4.2.19.Final/netty-buffer-4.2.19.Final.jar",
+      "sha256": "863f09b46cfe7d83872c9499086b9681cd9878c30a319d9f1f3a681bbfb0b12f"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/netty/netty-transport/4.2.19.Final/netty-transport-4.2.19.Final.jar",
+      "sha256": "d82d4e200456b8c5d8a1647a3724603f80616e5b35b9ada6e7a20d048f175075"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/netty/netty-handler/4.2.19.Final/netty-handler-4.2.19.Final.jar",
+      "sha256": "8b469cf23ddf21ba84291f4dff470d2277a28deac95e7084b0ff2ce853e58276"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/netty/netty-transport-native-unix-common/4.2.19.Final/netty-transport-native-unix-common-4.2.19.Final.jar",
+      "sha256": "341e91b8e69e6b7d92c353c845ffd91f34e921b7186254c176a64c7089b3e721"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/netty/netty-codec-base/4.2.19.Final/netty-codec-base-4.2.19.Final.jar",
+      "sha256": "5702c8097cc81e939dd12e5b39ac2e81f83737c320f6f4d88553577842f9ceb6"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/netty/netty-handler-proxy/4.2.19.Final/netty-handler-proxy-4.2.19.Final.jar",
+      "sha256": "6a46fb5716c8b2a227e3d5e4533ab67abaccc6cb3a4f431ff0ed0859ae8a6993"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/netty/netty-codec-socks/4.2.19.Final/netty-codec-socks-4.2.19.Final.jar",
+      "sha256": "b837044e8edbd977bafe4e643c13958a45cf0caefd1338b7e6660e716a769624"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/netty/netty-codec-http/4.2.19.Final/netty-codec-http-4.2.19.Final.jar",
+      "sha256": "7c28809a4f527746fbce2369f5ac5d5fcef45cfe9da21aa3dd9d3f6bdf00cbe0"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/netty/netty-codec-compression/4.2.19.Final/netty-codec-compression-4.2.19.Final.jar",
+      "sha256": "8935c51c7217780ae56d178c938b50ea5729b1e088cf3c2568674e331665554c"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/netty/netty-codec-http2/4.2.19.Final/netty-codec-http2-4.2.19.Final.jar",
+      "sha256": "f45756b12a75b907e98cd0158dc947308ca463cd3d27b9035d11a025a4fdbc4d"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/netty/netty-codec-classes-quic/4.2.19.Final/netty-codec-classes-quic-4.2.19.Final.jar",
+      "sha256": "c6f5765ac2cb37ce23156fce40629ff0221b80e53cfa68af21bad08def370098"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/netty/netty-codec-http3/4.2.19.Final/netty-codec-http3-4.2.19.Final.jar",
+      "sha256": "a13018427735554428a409c27ae679c44614b31fd402837caa7530a9fd688a26"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/netty/netty-resolver/4.2.19.Final/netty-resolver-4.2.19.Final.jar",
+      "sha256": "3ded47536faeb3c4c544a84871d82f461511589afb2a892a180ca425f281363e"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/netty/netty-resolver-dns/4.2.19.Final/netty-resolver-dns-4.2.19.Final.jar",
+      "sha256": "417aaf5cf25cd07865ea91d2e08916b6974995c54aa83730264fc0e06dd4ea90"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/netty/netty-codec-dns/4.2.19.Final/netty-codec-dns-4.2.19.Final.jar",
+      "sha256": "d8177c55f0864807f6ab02d0af7c72a6b88dd6bfd1a39f3a17e5954e0942fcad"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/netty/netty-tcnative-classes/2.0.84.Final/netty-tcnative-classes-2.0.84.Final.jar",
+      "sha256": "7a4437abf98b0cec053af4443fe321177d2cfccfec7bcad4e7d8b75571bbec4d"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/github/classgraph/classgraph/6.0.0/classgraph-6.0.0.jar",
+      "sha256": "ee7044bdb936ec693e9f9cabea2c5eec94d2234076168c911b3f13e8aa6a373c"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/github/classgraph/classgraph-classpath/6.0.0/classgraph-classpath-6.0.0.jar",
+      "sha256": "03965f42952a89534fa5eb6c48be98756b46a2b7c8cdc79538d2e3ab4d52958d"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/github/classgraph/classgraph-vfs/6.0.0/classgraph-vfs-6.0.0.jar",
+      "sha256": "f47e97c20b275baa0b6a2782ba54d06f5e772b7266484eefb5a295691b89d312"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/github/classgraph/classgraph-base/6.0.0/classgraph-base-6.0.0.jar",
+      "sha256": "5fe69cb38df53f7e1e1f3dda7c06f6dd5acb9a3fc329eb9d1bc0c2e6664fe909"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/tools/jackson/core/jackson-databind/3.2.4/jackson-databind-3.2.4.jar",
+      "sha256": "c4af37223d5024f1294a5450598b01b65f30c53d9e906f02c3955ba1fb14a67d"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.22/jackson-annotations-2.22.jar",
+      "sha256": "21ddb598807d3a51a876704eb979d9296e1c6a6f47ab1826ff88c6d6a127a2d0"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/org/apache/commons/commons-lang3/3.21.0/commons-lang3-3.21.0.jar",
+      "sha256": "a2af247ec4db6eb8947e18e23e0433e4871a7c5d0a40e1f92e46ede54ae1defe"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/org/apache/logging/log4j/log4j-api/2.26.1/log4j-api-2.26.1.jar",
+      "sha256": "f1810a4704ccce019d02bba029dc02a4f2ac0c997f647b465e7d409c1927f822"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/org/apache/logging/log4j/log4j-core/2.26.1/log4j-core-2.26.1.jar",
+      "sha256": "2ec8c3bf5a6d7c89be8620116a2fc973f7dda1ad0261ad393c4d4726edfd3dcb"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/org/apache/logging/log4j/log4j-slf4j2-impl/2.26.1/log4j-slf4j2-impl-2.26.1.jar",
+      "sha256": "cbdfb4c2bcc10f0927c61036db54924250f3924ecd13ea913cefe4f99c08fa66"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar",
+      "sha256": "7b751d952061954d5abfed7181c1f645d336091b679891591d63329c622eb832"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/org/apache/logging/log4j/log4j-jul/2.26.1/log4j-jul-2.26.1.jar",
+      "sha256": "6ac54ce38bdf0334d36b9ff30433c2a650e37747b907d6e040e9d47d12659e9f"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/smallrye/reactive/mutiny/3.3.1/mutiny-3.3.1.jar",
+      "sha256": "3c481e8335c6fb0bffa9acdac39a34acc4ee6b54e5124e0d7d4897822ad344ce"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/org/jctools/jctools-core/4.0.7/jctools-core-4.0.7.jar",
+      "sha256": "fab373e48733e00bdf7114edbdb49f54114b0237e088b161c05984a6705fed50"
+    },
+    {
+      "path": "C:/Java/DevSuite/target/project-local-repo/com.guicedee.modules.representations/json-representation/2.4.1/json-representation-2.4.1.jar",
+      "sha256": "076a585917ca3aeb4e4e0608564f4d8f1e9c6ab9ae71f4d33f3fc2206e85e338"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/vertx/vertx-auth-common/5.2.2/vertx-auth-common-5.2.2.jar",
+      "sha256": "ab870e1adc39c0409d89eb3605d550a4d32aa1ea06a45df58148bfe8ac465dbf"
+    },
+    {
+      "path": "C:/Java/DevSuite/target/project-local-repo/com.guicedee.modules.services/config-core/2.4.1/config-core-2.4.1.jar",
+      "sha256": "35ff9e58bc9622e52b83e7d26c25fac6b10cfc17ad4e83ad9080d4ec453e252d"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/org/jboss/logging/jboss-logging/3.6.3.Final/jboss-logging-3.6.3.Final.jar",
+      "sha256": "7c12ee575508f81e22b1db9334b969d0ec54ef0fd1dcba24eeab1a44235fc366"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/smallrye/common/smallrye-common-annotation/2.21.1/smallrye-common-annotation-2.21.1.jar",
+      "sha256": "ff110b621b1d17e47793a1a6f1b0e85ab1762490f2ef4752cebc5c9067e92d30"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/smallrye/common/smallrye-common-expression/2.21.1/smallrye-common-expression-2.21.1.jar",
+      "sha256": "0910a4dea8b4ed858e7d2d6323fdc7671b9572142320286586ed5895d3bd0566"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/smallrye/common/smallrye-common-function/2.21.1/smallrye-common-function-2.21.1.jar",
+      "sha256": "c73c6470884508331209298d77792efd352ae2fd70998739c5c733fbd323ca82"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/smallrye/common/smallrye-common-constraint/2.21.1/smallrye-common-constraint-2.21.1.jar",
+      "sha256": "daaa3a9211618f1ee82ff92f22b4931c27568b2afe1898cb365dc55d5799ebc6"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/io/smallrye/common/smallrye-common-classloader/2.21.1/smallrye-common-classloader-2.21.1.jar",
+      "sha256": "3ca598214b9554817bc2e7e872d2bceff9117a987e14a0bbc005b5a4752021f1"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/tools/jackson/core/jackson-core/3.2.4/jackson-core-3.2.4.jar",
+      "sha256": "494b9f5fccf008042d5a72c5bf00629b144c0ba7362a9864cbb02234c9772651"
+    },
+    {
+      "path": "C:/Java/DevSuite/target/project-local-repo/com.guicedee.modules.services/aopalliance-core/2.4.1/aopalliance-core-2.4.1.jar",
+      "sha256": "50495a06c3c94d6d2b2bc2e37c70c62762b9155dce61ecc60bf45b70b74f9b14"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/com/google/guava/guava/33.7.2-jre/guava-33.7.2-jre.jar",
+      "sha256": "b530942257fb935f8b2cfaa5f8eb5bd59c555fd8e8d01b8ce98912e077ea606c"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar",
+      "sha256": "cbfc3906b19b8f55dd7cfd6dfe0aa4532e834250d7f080bd8d211a3e246b59cb"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/org/jspecify/jspecify/1.0.1/jspecify-1.0.1.jar",
+      "sha256": "070d75f261fe4c5b8202508366715f7f2d4660f88c8ef7e6d3575e48c9683b66"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/com/google/errorprone/error_prone_annotations/2.50.0/error_prone_annotations-2.50.0.jar",
+      "sha256": "4667724877f1d37a689202da191e23efa7657c62eef93ccdac406eccfe5cdd0a"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/com/google/j2objc/j2objc-annotations/3.1/j2objc-annotations-3.1.jar",
+      "sha256": "84d3a150518485f8140ea99b8a985656749629f6433c92b80c75b36aba3b099b"
+    },
+    {
+      "path": "C:/Java/DevSuite/target/project-local-repo/com.guicedee/cdi/2.4.1/cdi-2.4.1.jar",
+      "sha256": "82f447a5ab60776ce21b092664aac5f584610c65ca25818fdc636b20d90d138a"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/jakarta/enterprise/jakarta.enterprise.cdi-api/4.1.0/jakarta.enterprise.cdi-api-4.1.0.jar",
+      "sha256": "c42c808f17925129a0800f618febe050d966e181a4c7384c8a5e7a0283d68699"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/jakarta/enterprise/jakarta.enterprise.lang-model/4.1.0/jakarta.enterprise.lang-model-4.1.0.jar",
+      "sha256": "bb56f571f60d2862b2387d5468fe8f5540f8094727283ed991f89082708095ee"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/jakarta/annotation/jakarta.annotation-api/3.0.0/jakarta.annotation-api-3.0.0.jar",
+      "sha256": "b01f55552284cfb149411e64eabca75e942d26d2e1786b32914250e4330afaa2"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/jakarta/el/jakarta.el-api/6.0.0/jakarta.el-api-6.0.0.jar",
+      "sha256": "f33d0becf2d5516730ba5cc99a7b5a2b1f62986bf0a3370249cdff9a2f171507"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/jakarta/interceptor/jakarta.interceptor-api/2.2.0/jakarta.interceptor-api-2.2.0.jar",
+      "sha256": "d240d72b4dd38a2e431c804079810010cb97903678fa5f987fb7434878b04398"
+    },
+    {
+      "path": "C:/Users/GedMarc/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar",
+      "sha256": "f7dc98062fccf14126abb751b64fab12c312566e8cbdc8483598bffcea93af7c"
+    }
+  ],
+  "note": "Runtime artifacts unchanged; testing libraries remain on the classpath. Module resolution alone is not a startup or compatibility pass."
+}

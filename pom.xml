@@ -13,6 +13,7 @@
     <arquillian.version>1.10.2.Final</arquillian.version>
     <tck.reports.directory>${project.build.directory}/surefire-reports</tck.reports.directory>
     <tck.fork.timeout>240</tck.fork.timeout>
+    <tck.jvm.args />
   </properties>
   <modules>
     <module>harness</module>
@@ -94,7 +95,7 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>3.5.5</version>
           <configuration>
-            <argLine>-XX:ActiveProcessorCount=4</argLine>
+            <argLine>-XX:ActiveProcessorCount=4 ${tck.jvm.args}</argLine>
             <reportsDirectory>${tck.reports.directory}</reportsDirectory>
             <useModulePath>false</useModulePath>
             <reuseForks>false</reuseForks>

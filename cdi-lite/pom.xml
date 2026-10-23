@@ -8,6 +8,9 @@
     <relativePath>../pom.xml</relativePath>
   </parent>
   <artifactId>cdi-lite</artifactId>
+  <properties>
+    <tck.cdi.suite>${project.basedir}/../target/core-profile/core-profile-tck-10.0.1/artifacts/cdi-lite-tck-suite-10.0.1.xml</tck.cdi.suite>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>jakarta.enterprise</groupId>
@@ -59,8 +62,11 @@
           </dependency>
         </dependencies>
         <configuration>
+          <systemPropertyVariables>
+            <tck.cdi.parameters>true</tck.cdi.parameters>
+          </systemPropertyVariables>
           <suiteXmlFiles>
-            <suiteXmlFile>${project.basedir}/../target/core-profile/core-profile-tck-10.0.1/artifacts/cdi-lite-tck-suite-10.0.1.xml</suiteXmlFile>
+            <suiteXmlFile>${tck.cdi.suite}</suiteXmlFile>
           </suiteXmlFiles>
           <dependenciesToScan>
             <dependency>jakarta.enterprise:cdi-tck-core-impl</dependency>

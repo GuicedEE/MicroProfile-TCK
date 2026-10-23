@@ -1,0 +1,6495 @@
+{
+  "classpath": {
+    "status": "FAILED",
+    "counts": {
+      "passed": 0,
+      "failed": 294,
+      "skipped": 1436
+    },
+    "classResults": [
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.bindings.aroundConstruct.ConstructorInterceptionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 10
+        },
+        "elapsedSeconds": 9.8
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.bindings.broken.InvalidStereotypeInterceptorBindingAnnotationsTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.49
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.bindings.broken.InvalidTransitiveInterceptorBindingAnnotationsTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.2
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.bindings.members.InterceptorBindingTypeWithMemberTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 6
+        },
+        "elapsedSeconds": 9.75
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.bindings.multiple.MultipleInterceptorBindingsTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 6
+        },
+        "elapsedSeconds": 9.74
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.bindings.overriding.InterceptorBindingOverridingTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.67
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.bindings.resolution.InterceptorBindingResolutionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 6
+        },
+        "elapsedSeconds": 8.82
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.contract.aroundConstruct.AroundConstructTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 6
+        },
+        "elapsedSeconds": 9.48
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.contract.aroundConstruct.bindings.AroundConstructTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 6
+        },
+        "elapsedSeconds": 9.96
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.contract.aroundInvoke.AroundInvokeAccessInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 6
+        },
+        "elapsedSeconds": 9.87
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.contract.aroundInvoke.bindings.AroundInvokeInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.06
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.contract.exceptions.aroundInvoke.ExceptionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 4
+        },
+        "elapsedSeconds": 9.94
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.contract.interceptorLifeCycle.InterceptorLifeCycleTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 4
+        },
+        "elapsedSeconds": 9.59
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.contract.interceptorLifeCycle.aroundConstruct.AroundConstructLifeCycleTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 4
+        },
+        "elapsedSeconds": 9.25
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.contract.interceptorLifeCycle.aroundConstruct.returnValueIgnored.AroundConstructInterceptorReturnValueTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.81
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.contract.interceptorLifeCycle.aroundConstruct.withAroundInvoke.SingleInterceptorInstanceTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.77
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.contract.invocationContext.InvocationContextTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 22
+        },
+        "elapsedSeconds": 9.97
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.contract.lifecycleCallback.LifecycleCallbackInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 18
+        },
+        "elapsedSeconds": 9.89
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.contract.lifecycleCallback.bindings.LifecycleInterceptorDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 4
+        },
+        "elapsedSeconds": 8.43
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.contract.lifecycleCallback.exceptions.LifecycleCallbackInterceptorExceptionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 6
+        },
+        "elapsedSeconds": 8.42
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.order.aroundConstruct.AroundConstructOrderTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 8.96
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.order.aroundInvoke.AroundInvokeOrderTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 8.96
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.order.lifecycleCallback.PostConstructOrderTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.2
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.order.overriden.lifecycleCallback.OverridenLifecycleCallbackInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 4
+        },
+        "elapsedSeconds": 9.34
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.alternative.resolution.qualifier.QualifierInheritedTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.09
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.alternative.resolution.qualifier.QualifierNotDeclaredTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.84
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.alternative.resolution.qualifier.QualifierNotInheritedTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.29
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.alternative.selection.SelectedAlternative01Test",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 4
+        },
+        "elapsedSeconds": 9.27
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.alternative.selection.SelectedAlternative02Test",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.5
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.alternative.selection.stereotype.priority.StereotypeWithAlternativeSelectedByPriorityTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.28
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.beanContainer.BeanContainerTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 18
+        },
+        "elapsedSeconds": 9.32
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.beanContainer.bytype.BeanByTypeTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 12
+        },
+        "elapsedSeconds": 9.13
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.beanContainer.injection.BeanContainerInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.62
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.changeBeanQualifier.ChangeBeanQualifierTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.55
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.changeInjectionPoint.ChangeInjectionPointTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.92
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.changeObserverQualifier.ChangeObserverQualifierTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 4
+        },
+        "elapsedSeconds": 9.84
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.customInterceptorBinding.CustomInterceptorBindingTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.93
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.customQualifier.CustomQualifierTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.85
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.customStereotype.CustomStereotypeTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.55
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.inspectAnnotatedSubtypes.InspectAnnotatedSubtypesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.52
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.invalid.EnhancementMultipleParams2Test",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.4
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.invalid.EnhancementMultipleParamsTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.3
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.invalid.EnhancementNoParamTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.93
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.invalid.EnhancementOnlyMessagesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.76
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.invalid.EnhancementOnlyTypesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.63
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.invalid.RegistrationMultipleParams2Test",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.62
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.invalid.RegistrationMultipleParamsTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.07
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.invalid.RegistrationNoParamTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.11
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.invalid.RegistrationOnlyMessagesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.22
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.invalid.RegistrationOnlyTypesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.18
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.priority.PriorityTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.29
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.registration.RegistrationTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.29
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.syntheticBean.SyntheticBeanTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.46
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.syntheticBeanInjectionPoint.SyntheticBeanInjectionPointTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.4
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.syntheticBeanWithLookup.SyntheticBeanWithLookupTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.47
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.syntheticObserver.SyntheticObserverTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.43
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.syntheticObserverOfParameterizedType.SyntheticObserverOfParameterizedTypeTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.49
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.validation.ValidationTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.06
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.context.DestroyForSameCreationalContextTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.45
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.context.DestroyedInstanceReturnedByGetTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.42
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.context.GetFromContextualTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.09
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.context.GetOnInactiveContextTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.13
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.context.GetWithNoCreationalContextTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.01
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.context.alterable.AlterableContextTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 6
+        },
+        "elapsedSeconds": 9.07
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.context.dependent.DependentContextTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 48
+        },
+        "elapsedSeconds": 9.65
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.context.dependent.instance.BuiltinInstanceDependentObjectTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.17
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.context.dependent.transientreference.DependentTransientReferenceDestroyedTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 4
+        },
+        "elapsedSeconds": 10.0
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.bean.BeanDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 24
+        },
+        "elapsedSeconds": 10.2
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.bean.broken.restricted.RestrictedManagedBeanTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.86
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.bean.broken.restricted.RestrictedProducerFieldTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.91
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.bean.broken.restricted.RestrictedProducerMethodTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.84
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.bean.genericbroken.GenericManagedBeanTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.84
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.bean.types.ManagedBeanTypesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.31
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.bean.types.illegal.BeanTypesWithIllegalTypeTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 6
+        },
+        "elapsedSeconds": 9.46
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.name.NameDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 18
+        },
+        "elapsedSeconds": 9.77
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.qualifier.QualifierDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 16
+        },
+        "elapsedSeconds": 9.44
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.qualifier.builtin.BuiltInQualifierDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 16
+        },
+        "elapsedSeconds": 9.64
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.qualifier.repeatable.RepeatableQualifiersTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.52
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.scope.ScopeDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 30
+        },
+        "elapsedSeconds": 10.43
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.scope.broken.tooManyScopes.TooManyScopesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.73
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.scope.broken.tooManyScopes.producer.field.ProducerFieldTooManyScopesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.9
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.scope.broken.tooManyScopes.producer.method.ProducerMethodTooManyScopesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.83
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.scope.inOtherBda.ScopeDefinedInOtherBDATest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.92
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.stereotype.StereotypeDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 22
+        },
+        "elapsedSeconds": 10.15
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.stereotype.broken.multiplePriorities.ConflictingPrioritiesFromSingleStereotypeTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.3
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.stereotype.broken.multiplePriorities.ConflictingPriorityStereotypesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.4
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.stereotype.broken.multiplePriorities.inherited.StereotypeInheritedPriorityConflictTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.57
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.stereotype.broken.nonEmptyNamed.NonEmptyNamedTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.49
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.stereotype.broken.scopeConflict.IncompatibleStereotypesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.78
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.stereotype.broken.scopeConflict.transitive.TransitiveIncompatibleStereotypesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.3
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.stereotype.broken.tooManyScopes.TooManyScopeTypesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.54
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.stereotype.inheritance.StereotypeInheritenceTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.47
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.stereotype.interceptor.StereotypeWithMultipleInterceptorBindingsTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.46
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.stereotype.named.DefaultNamedTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 4
+        },
+        "elapsedSeconds": 10.55
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.stereotype.priority.StereotypeWithPriorityTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 8
+        },
+        "elapsedSeconds": 9.87
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.stereotype.priority.inherited.StereotypeInheritedPriorityTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.98
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.deployment.discovery.EmptyBeansXmlDiscoveryTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.4
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.EventTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 14
+        },
+        "elapsedSeconds": 9.53
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.bindingTypes.EventBindingTypesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 12
+        },
+        "elapsedSeconds": 9.85
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.broken.observer.beanNotManaged.ObserverMethodOnIncorrectBeanTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.76
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.broken.observer.bothObservesAnnotations.ObserverMethodParameterAnnotatedAsSyncAndAsyncTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.8
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.broken.observer.dependentIsConditionalObserver.DependentIsConditionalObserverTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.91
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.broken.observer.inject.DeploymentFailureTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.21
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.broken.observer.isDisposer.ObserverMethodAnnotatedDisposesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.05
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.broken.observer.isProducer.ObserverMethodAnnotatedProducesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.8
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.broken.observer.tooManyParameters.ObserverMethodWithObservesAndObservesAsyncParametersTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.78
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.broken.observer.tooManyParameters.ObserverMethodWithTwoEventParametersTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.93
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.broken.raw.RawEventConstructorInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.96
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.broken.raw.RawEventDisposerInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.15
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.broken.raw.RawEventFieldInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.34
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.broken.raw.RawEventInitMethodInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.28
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.broken.raw.RawEventObserverInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.28
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.broken.raw.RawEventProducerMethodInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.68
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.eventTypes.EventTypesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 6
+        },
+        "elapsedSeconds": 11.3
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.fires.FireEventTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 20
+        },
+        "elapsedSeconds": 10.64
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.fires.nonbinding.NonBindingTypePassedToFireTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.24
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.fires.sync.FireSyncEventTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.44
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.implicit.ImplicitEventTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 10
+        },
+        "elapsedSeconds": 10.53
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.lifecycle.StartupShutdownTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.69
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.metadata.EventMetadataTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 4
+        },
+        "elapsedSeconds": 10.88
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.metadata.broken.initializer.InvalidEventMetadataInjectionPointTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.59
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.metadata.injectionpoint.EventMetadataInjectionPointTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 12
+        },
+        "elapsedSeconds": 11.46
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.ObserverNotificationTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 4
+        },
+        "elapsedSeconds": 11.22
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.abortProcessing.ObserverExceptionAbortsProcessingTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.24
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.abortProcessing.orderedObservers.ExceptionInOrderedObserversAbortsProcessingTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.72
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.async.basic.MixedObserversTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 6
+        },
+        "elapsedSeconds": 10.69
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.async.executor.FireAsyncWithCustomExecutorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.28
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.async.handlingExceptions.MultipleExceptionsInObserversNotificationTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 4
+        },
+        "elapsedSeconds": 9.9
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.broken.validation.ambiguous.ObserverMethodParameterInjectionValidationTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.74
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.broken.validation.unsatisfied.ObserverMethodParameterInjectionValidationTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.62
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.checkedException.CheckedExceptionWrappedTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.11
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.conditional.ConditionalObserverTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 10
+        },
+        "elapsedSeconds": 10.28
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.inheritance.ObserverInheritanceTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.05
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.method.ObserverMethodTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 16
+        },
+        "elapsedSeconds": 10.36
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.param.modification.SyncEventModificationTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.41
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.priority.EventObserverOrderingTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 10
+        },
+        "elapsedSeconds": 10.53
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.priority.contextLifecycleEvent.ApplicationContextLifecycleEventObserverOrderingTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.04
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.resolve.ResolveEventObserversTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 24
+        },
+        "elapsedSeconds": 10.21
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.runtimeException.ObserverExceptionRethrownTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.25
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.wildcardAndTypeVariable.ObserverMethodWithParametertizedTypeTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 8
+        },
+        "elapsedSeconds": 10.71
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.parameterized.ParameterizedEventTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 18
+        },
+        "elapsedSeconds": 11.8
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.resolve.binding.DuplicateBindingTypesWhenResolvingTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.42
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.resolve.binding.ResolvingChecksBindingTypeMembersTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.23
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.resolve.nonbinding.NonBindingTypesWhenResolvingTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.16
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.resolve.typeWithParameters.CheckTypeParametersWhenResolvingObserversTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 16
+        },
+        "elapsedSeconds": 12.36
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.resolve.typeWithParameters.ChecksEventTypeWhenResolvingTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.33
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.select.SelectEventTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 12
+        },
+        "elapsedSeconds": 12.49
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.injection.BuiltinInterceptorInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.01
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.injection.intercepted.InterceptedBeanConstructorInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 8.23
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.injection.intercepted.InterceptedBeanFieldInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.21
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.injection.intercepted.InterceptedBeanInitializerInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.82
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.typeparam.BeanTypeParamConstructorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.78
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.typeparam.BeanTypeParamDisposerTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.38
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.typeparam.BeanTypeParamFieldTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.28
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.typeparam.BeanTypeParamInitializerTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.22
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.typeparam.BeanTypeParamProducerTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.44
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.typeparam.interceptor.InterceptedBeanTypeParamConstructorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.25
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.typeparam.interceptor.InterceptedBeanTypeParamFieldTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.73
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.typeparam.interceptor.InterceptedBeanTypeParamInitializerTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.95
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.typeparam.interceptor.InterceptorTypeParamConstructorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.82
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.typeparam.interceptor.InterceptorTypeParamFieldTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.87
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.typeparam.interceptor.InterceptorTypeParamInitializerTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.65
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.disposal.method.definition.DisposalMethodDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 10
+        },
+        "elapsedSeconds": 11.26
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.disposal.method.definition.broken.initializerUnallowed.InitializerUnallowedDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.04
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.disposal.method.definition.broken.interceptor.DisposerMethodOnInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.48
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.disposal.method.definition.broken.multiParams.MultipleDisposeParametersDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.45
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.disposal.method.definition.broken.multiple.MultipleDisposerMethodsForProducerMethodTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.48
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.disposal.method.definition.broken.observes.ObserverParameterUnallowedDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.76
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.disposal.method.definition.broken.producesUnallowed.ProducesUnallowedDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.69
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.disposal.method.definition.broken.unresolvedMethod.UnresolvedDisposalMethodDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.77
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.disposal.method.definition.broken.validation.ambiguous.DisposerMethodParameterInjectionValidationTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.9
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.disposal.method.definition.broken.validation.unsatisfied.DisposerMethodParameterInjectionValidationTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.04
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.disposal.method.definition.inheritance.DisposerMethodInheritanceTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.14
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.disposal.method.definition.invocation.DisposesMethodCalledOnceTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 12
+        },
+        "elapsedSeconds": 11.9
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.disposal.method.definition.parameters.DisposedParameterPositionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.8
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.initializer.InitializerMethodTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 4
+        },
+        "elapsedSeconds": 11.52
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.initializer.broken.generic.GenericInitializerMethodTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.64
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.initializer.broken.methodAnnotatedProduces.InitializerMethodAnnotatedProducesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.68
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.initializer.broken.parameterAnnotatedAsyncObserves.ParameterAnnotatedAsyncObservesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.71
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.initializer.broken.parameterAnnotatedDisposes.ParameterAnnotatedDisposesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.64
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.initializer.broken.parameterAnnotatedObserves.ParameterAnnotatedObservesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.72
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.field.definition.ProducerFieldDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 32
+        },
+        "elapsedSeconds": 12.43
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.field.definition.broken.array.ProducerFieldArrayTypeVariableTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.76
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.field.definition.broken.array.ProducerFieldArrayWildcardTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.79
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.field.definition.broken.inject.InjectAnnotatedProducerFieldTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.69
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.field.definition.broken.interceptor.ProducerFieldOnInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.02
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.field.definition.broken.typeVariable.ProducerFieldWithTypeVariableTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.65
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.field.definition.broken.typeVariable2.RequestScopedProducerFieldWithTypeVariableTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.54
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.field.definition.broken.wildcard.ProducerFieldTypeWithWildcardTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.07
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.field.lifecycle.ProducerFieldLifecycleTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 14
+        },
+        "elapsedSeconds": 11.9
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.method.broken.array.ProducerMethodArrayTypeVariableTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.18
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.method.broken.array.ProducerMethodArrayWildcardTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.23
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.method.broken.interceptor.ProducerMethodOnInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.13
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.method.broken.parameterAnnotatedDisposes.ParameterAnnotatedDisposesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.96
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.method.broken.parameterAnnotatedObserves.ParameterAnnotatedObservesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.58
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.method.broken.parameterAnnotatedObservesAsync.ParameterAnnotatedAsyncObservesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.63
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.method.broken.parameterizedTypeWithTypeParameter.ParameterizedReturnTypeWithTypeVariableTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.69
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.method.broken.parameterizedTypeWithTypeParameter.ParametrizedReturnTypeWithTypeVariable02Test",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.74
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.method.broken.parameterizedTypeWithWildcard.ParameterizedTypeWithWildcardTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.58
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.method.broken.parameterizedTypeWithWildcard.ParametrizedTypeWithWildcard02Test",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.49
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.method.broken.typeVariableReturnType.TypeVariableReturnTypeTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.4
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.method.definition.ProducerMethodDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 42
+        },
+        "elapsedSeconds": 11.3
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.method.definition.name.ProducerMethodWithDefaultNameTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 6
+        },
+        "elapsedSeconds": 10.98
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.method.lifecycle.ProducerMethodLifecycleTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 16
+        },
+        "elapsedSeconds": 11.4
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.simple.definition.SimpleBeanDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 22
+        },
+        "elapsedSeconds": 11.31
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.simple.definition.broken.field.InjectedFieldAnnotatedWithProducesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.54
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.simple.definition.constructorHasAsyncObservesParameter.ConstructorHasAsyncObservesParameterTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.41
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.simple.definition.constructorHasDisposesParameter.ConstructorHasDisposesParameterTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.43
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.simple.definition.constructorHasObservesParameter.ConstructorHasObservesParameterTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.5
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.simple.definition.dependentWithPublicField.DependentWithPublicFieldTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 9.97
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.simple.definition.nonDependentWithPublicStaticField.NonDependentWithPublicStaticFieldTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.52
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.simple.definition.tooManyInitializerAnnotatedConstructors.TooManyInitializerAnnotatedConstructorsTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.35
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.simple.lifecycle.SimpleBeanLifecycleTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 38
+        },
+        "elapsedSeconds": 11.06
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.simple.lifecycle.unproxyable.UnproxyableManagedBeanTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 10
+        },
+        "elapsedSeconds": 11.33
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.inheritance.generics.MemberLevelInheritanceTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 8
+        },
+        "elapsedSeconds": 11.19
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.InterceptorDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 22
+        },
+        "elapsedSeconds": 11.97
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.broken.finalClassInterceptor.DependentBeanFinalMethodInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.79
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.broken.finalClassInterceptor.FinalClassClassLevelInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.91
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.broken.finalClassInterceptor.NormalScopedBeanFinalClassInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.83
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.broken.finalClassInterceptor.NormalScopedBeanFinalMethodInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.58
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.broken.nonDependent.NonDependentInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.02
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.broken.observer.InterceptorWithObserverMethodTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.66
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.broken.observer.async.InterceptorWithAsyncObserverMethodTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.97
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.inheritance.InterceptorBindingInheritanceTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 12
+        },
+        "elapsedSeconds": 11.36
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.inheritance.broken.binding.FinalClassWithInheritedClassLevelInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.73
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.inheritance.broken.binding.FinalClassWithInheritedStereotypeInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.32
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.inheritance.broken.binding.FinalMethodWithInheritedClassLevelInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.26
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.inheritance.broken.binding.FinalMethodWithInheritedStereotypeInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.07
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.interceptorOrder.InterceptorOrderTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.47
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.member.InterceptorBindingTypeWithMemberTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 4
+        },
+        "elapsedSeconds": 10.57
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.invocation.InterceptorInvocationTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 14
+        },
+        "elapsedSeconds": 10.73
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.binding.members.annotation.BindingAnnotationWithMemberTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.69
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.binding.members.array.BindingAnnotationWithMemberTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.82
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.byname.ResolutionByNameTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.74
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.byname.ambiguous.AmbiguousELNamesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.85
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.byname.broken.duplicity.DuplicitNameTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.21
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.byname.broken.injectionPointWithNamed.NamedNonFieldInjectionPointTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.31
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.byname.broken.injectionPointWithNamed2.NamedNonFieldInjectionPointTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.17
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.byname.broken.injectionPointWithNamed3.NamedNonFieldInjectionPointTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.33
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.byname.broken.prefix.ExpandedNamePrefix2Test",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.37
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.byname.broken.prefix.ExpandedNamePrefixTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.04
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.byname.broken.prefix.NamePrefixTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.07
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.circular.CircularDependencyTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 14
+        },
+        "elapsedSeconds": 11.77
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.clientProxy.ClientProxyTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 4
+        },
+        "elapsedSeconds": 11.73
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.clientProxy.unproxyable.array.ArrayTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.19
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.clientProxy.unproxyable.beanConstructor.BeanConstructorWithParametersTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.72
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.clientProxy.unproxyable.finalClass.FinalClassTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.95
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.clientProxy.unproxyable.finalMethod.NonPrivateNonStaticSuperclassMethodTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.95
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.clientProxy.unproxyable.finalMethod.PackagePrivateFinalMethodNotProxyableTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.03
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.clientProxy.unproxyable.finalMethod.PrivateFinalMethodTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.7
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.clientProxy.unproxyable.finalMethod.ProtectedFinalMethodNotProxyableTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.95
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.clientProxy.unproxyable.finalMethod.PublicFinalMethodNotProxyableTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.91
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.clientProxy.unproxyable.finalMethod.StaticFinalMethodTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.82
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.clientProxy.unproxyable.interceptor.InterceptedBeanProxyTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.27
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.clientProxy.unproxyable.primitive.UnproxyableTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.03
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.clientProxy.unproxyable.privateConstructor.PrivateConstructorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.22
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.dependency.resolution.AmbiguousDependencyResolutionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 4
+        },
+        "elapsedSeconds": 12.5
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.dependency.resolution.broken.ambiguous.AmbiguousDependencyTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.67
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.dependency.resolution.broken.unsatisfied.UnsatisfiedDependencyTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.78
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.dynamic.DynamicLookupTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 26
+        },
+        "elapsedSeconds": 11.45
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.dynamic.broken.raw.RawInstanceConstructorInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.74
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.dynamic.broken.raw.RawInstanceDisposerInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.86
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.dynamic.broken.raw.RawInstanceFieldInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.48
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.dynamic.broken.raw.RawInstanceInitMethodInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.66
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.dynamic.broken.raw.RawInstanceObserverInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.19
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.dynamic.broken.raw.RawInstanceProducerMethodInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.25
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.dynamic.builtin.BuiltinInstanceTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 6
+        },
+        "elapsedSeconds": 11.83
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.dynamic.destroy.dependent.DestroyingDependentInstanceTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 4
+        },
+        "elapsedSeconds": 11.63
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.dynamic.destroy.normal.DestroyingNormalScopedInstanceTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 8
+        },
+        "elapsedSeconds": 11.76
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.dynamic.handle.InstanceHandleTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 8
+        },
+        "elapsedSeconds": 11.33
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.injection.any.AnyInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.42
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.injection.parameterized.ParameterizedTypesInjectionToParameterizedWithActualTypeTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.48
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.injection.parameterized.ParameterizedTypesInjectionToParameterizedWithTypeVariableTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.38
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.injection.parameterized.ParameterizedTypesInjectionToParameterizedWithTypeVariableUpperBoundTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.59
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.injection.parameterized.ParameterizedTypesInjectionToParameterizedWithWildcardTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.44
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.injection.parameterized.ParameterizedTypesInjectionToRawTypeTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.38
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.injection.parameterized.broken.raw.ParameterizedTypesInjectionRawAmbiguousTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.51
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.injection.parameterized.multiple.bounds.ParameterizedTypesWithTypeVariableWithMultipleBoundsTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 6
+        },
+        "elapsedSeconds": 11.05
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.injectionpoint.InjectionPointTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 26
+        },
+        "elapsedSeconds": 10.96
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.injectionpoint.broken.disposer.DisposerInjectionPointMetadataTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.07
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.injectionpoint.broken.normal.scope.NormalScopedBeanWithInjectionPoint",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.74
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.injectionpoint.dynamic.DynamicInjectionPointTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 14
+        },
+        "elapsedSeconds": 10.85
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.injectionpoint.named.NamedAtInjectionPointTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.74
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.injectionpoint.requiredtype.LegalRequiredTypeTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.6
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.manager.ManagerTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 12
+        },
+        "elapsedSeconds": 10.57
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.typesafe.resolution.ResolutionByTypeTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 24
+        },
+        "elapsedSeconds": 10.86
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.typesafe.resolution.broken.disabled.DisabledBeanNotAvailableForInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.06
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.typesafe.resolution.broken.type.variable.TypeVariableInjectionPointTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.23
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.typesafe.resolution.interceptor.InterceptorNotResolvedInterModuleTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.38
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.typesafe.resolution.interceptor.InterceptorNotResolvedTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.21
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.typesafe.resolution.parameterized.AssignabilityOfRawAndParameterizedTypesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 22
+        },
+        "elapsedSeconds": 11.0
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.typesafe.resolution.parameterized.raw.RawBeanTypeParameterizedRequiredTypeTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 4
+        },
+        "elapsedSeconds": 10.36
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.typesafe.resolution.primitive.PrimitiveInjectionPointTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.5
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.vetoed.VetoedTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 4
+        },
+        "elapsedSeconds": 8.13
+      }
+    ],
+    "elapsedSeconds": 3095.79,
+    "run": "cdi-isolated-2026-10-23",
+    "elapsedNote": "Sum of class process durations across interrupted/resumed execution; not wall-clock duration."
+  },
+  "jpms": {
+    "status": "FAILED",
+    "counts": {
+      "passed": 10,
+      "failed": 663,
+      "skipped": 402
+    },
+    "classResults": [
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.bindings.aroundConstruct.ConstructorInterceptionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 5,
+          "skipped": 0
+        },
+        "elapsedSeconds": 14.93
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.bindings.broken.InvalidStereotypeInterceptorBindingAnnotationsTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 14.13
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.bindings.broken.InvalidTransitiveInterceptorBindingAnnotationsTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 14.24
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.bindings.members.InterceptorBindingTypeWithMemberTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 3,
+          "skipped": 0
+        },
+        "elapsedSeconds": 14.81
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.bindings.multiple.MultipleInterceptorBindingsTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 3,
+          "skipped": 0
+        },
+        "elapsedSeconds": 14.71
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.bindings.overriding.InterceptorBindingOverridingTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 1
+        },
+        "elapsedSeconds": 14.74
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.bindings.resolution.InterceptorBindingResolutionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 3,
+          "skipped": 0
+        },
+        "elapsedSeconds": 14.27
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.contract.aroundConstruct.AroundConstructTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 3,
+          "skipped": 0
+        },
+        "elapsedSeconds": 14.45
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.contract.aroundConstruct.bindings.AroundConstructTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 3,
+          "skipped": 0
+        },
+        "elapsedSeconds": 14.97
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.contract.aroundInvoke.AroundInvokeAccessInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 3,
+          "skipped": 0
+        },
+        "elapsedSeconds": 14.86
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.contract.aroundInvoke.bindings.AroundInvokeInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 14.32
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.contract.exceptions.aroundInvoke.ExceptionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 2,
+          "skipped": 0
+        },
+        "elapsedSeconds": 14.37
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.contract.interceptorLifeCycle.InterceptorLifeCycleTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 2,
+          "skipped": 0
+        },
+        "elapsedSeconds": 14.82
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.contract.interceptorLifeCycle.aroundConstruct.AroundConstructLifeCycleTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 2,
+          "skipped": 0
+        },
+        "elapsedSeconds": 14.74
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.contract.interceptorLifeCycle.aroundConstruct.returnValueIgnored.AroundConstructInterceptorReturnValueTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 14.58
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.contract.interceptorLifeCycle.aroundConstruct.withAroundInvoke.SingleInterceptorInstanceTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 14.6
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.contract.invocationContext.InvocationContextTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 11,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.32
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.contract.lifecycleCallback.LifecycleCallbackInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 9,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.06
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.contract.lifecycleCallback.bindings.LifecycleInterceptorDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 2,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.67
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.contract.lifecycleCallback.exceptions.LifecycleCallbackInterceptorExceptionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 2,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.91
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.order.aroundConstruct.AroundConstructOrderTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.98
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.order.aroundInvoke.AroundInvokeOrderTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.12
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.order.lifecycleCallback.PostConstructOrderTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.12
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.interceptors.tests.order.overriden.lifecycleCallback.OverridenLifecycleCallbackInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 2,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.08
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.alternative.resolution.qualifier.QualifierInheritedTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 1
+        },
+        "elapsedSeconds": 11.39
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.alternative.resolution.qualifier.QualifierNotDeclaredTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 1
+        },
+        "elapsedSeconds": 11.24
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.alternative.resolution.qualifier.QualifierNotInheritedTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 1
+        },
+        "elapsedSeconds": 11.54
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.alternative.selection.SelectedAlternative01Test",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 3
+        },
+        "elapsedSeconds": 12.0
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.alternative.selection.SelectedAlternative02Test",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 1
+        },
+        "elapsedSeconds": 12.18
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.alternative.selection.stereotype.priority.StereotypeWithAlternativeSelectedByPriorityTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.14
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.beanContainer.BeanContainerTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 9,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.25
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.beanContainer.bytype.BeanByTypeTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 6,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.12
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.beanContainer.injection.BeanContainerInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 1
+        },
+        "elapsedSeconds": 11.57
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.changeBeanQualifier.ChangeBeanQualifierTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 11.3
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.changeInjectionPoint.ChangeInjectionPointTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 11.15
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.changeObserverQualifier.ChangeObserverQualifierTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 2,
+          "skipped": 0
+        },
+        "elapsedSeconds": 10.89
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.customInterceptorBinding.CustomInterceptorBindingTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 11.64
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.customQualifier.CustomQualifierTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 11.83
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.customStereotype.CustomStereotypeTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 11.85
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.inspectAnnotatedSubtypes.InspectAnnotatedSubtypesTest",
+        "status": "PASSED_DIAGNOSTIC",
+        "exitCode": 0,
+        "counts": {
+          "passed": 1,
+          "failed": 0,
+          "skipped": 0
+        },
+        "elapsedSeconds": 11.88
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.invalid.EnhancementMultipleParams2Test",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.04
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.invalid.EnhancementMultipleParamsTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.21
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.invalid.EnhancementNoParamTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.16
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.invalid.EnhancementOnlyMessagesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.81
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.invalid.EnhancementOnlyTypesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.6
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.invalid.RegistrationMultipleParams2Test",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.27
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.invalid.RegistrationMultipleParamsTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.15
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.invalid.RegistrationNoParamTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.42
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.invalid.RegistrationOnlyMessagesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.67
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.invalid.RegistrationOnlyTypesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 10.67
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.priority.PriorityTest",
+        "status": "PASSED_DIAGNOSTIC",
+        "exitCode": 0,
+        "counts": {
+          "passed": 1,
+          "failed": 0,
+          "skipped": 0
+        },
+        "elapsedSeconds": 10.78
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.registration.RegistrationTest",
+        "status": "PASSED_DIAGNOSTIC",
+        "exitCode": 0,
+        "counts": {
+          "passed": 1,
+          "failed": 0,
+          "skipped": 0
+        },
+        "elapsedSeconds": 10.95
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.syntheticBean.SyntheticBeanTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 10.67
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.syntheticBeanInjectionPoint.SyntheticBeanInjectionPointTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 11.23
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.syntheticBeanWithLookup.SyntheticBeanWithLookupTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 11.15
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.syntheticObserver.SyntheticObserverTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 11.38
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.syntheticObserverOfParameterizedType.SyntheticObserverOfParameterizedTypeTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.27
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.build.compatible.extensions.validation.ValidationTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.92
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.context.DestroyForSameCreationalContextTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.1
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.context.DestroyedInstanceReturnedByGetTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.18
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.context.GetFromContextualTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.18
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.context.GetOnInactiveContextTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.15
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.context.GetWithNoCreationalContextTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.09
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.context.alterable.AlterableContextTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 3,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.97
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.context.dependent.DependentContextTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 24,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.98
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.context.dependent.instance.BuiltinInstanceDependentObjectTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.44
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.context.dependent.transientreference.DependentTransientReferenceDestroyedTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 2,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.37
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.bean.BeanDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 12,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.61
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.bean.broken.restricted.RestrictedManagedBeanTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.13
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.bean.broken.restricted.RestrictedProducerFieldTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.11
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.bean.broken.restricted.RestrictedProducerMethodTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.25
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.bean.genericbroken.GenericManagedBeanTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.28
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.bean.types.ManagedBeanTypesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.62
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.bean.types.illegal.BeanTypesWithIllegalTypeTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 3,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.76
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.name.NameDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 9,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.9
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.qualifier.QualifierDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 8,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.78
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.qualifier.builtin.BuiltInQualifierDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 8,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.0
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.qualifier.repeatable.RepeatableQualifiersTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 1
+        },
+        "elapsedSeconds": 12.7
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.scope.ScopeDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 15,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.05
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.scope.broken.tooManyScopes.TooManyScopesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.59
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.scope.broken.tooManyScopes.producer.field.ProducerFieldTooManyScopesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.93
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.scope.broken.tooManyScopes.producer.method.ProducerMethodTooManyScopesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.98
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.scope.inOtherBda.ScopeDefinedInOtherBDATest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.68
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.stereotype.StereotypeDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 11,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.7
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.stereotype.broken.multiplePriorities.ConflictingPrioritiesFromSingleStereotypeTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.81
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.stereotype.broken.multiplePriorities.ConflictingPriorityStereotypesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.91
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.stereotype.broken.multiplePriorities.inherited.StereotypeInheritedPriorityConflictTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.55
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.stereotype.broken.nonEmptyNamed.NonEmptyNamedTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.39
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.stereotype.broken.scopeConflict.IncompatibleStereotypesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.61
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.stereotype.broken.scopeConflict.transitive.TransitiveIncompatibleStereotypesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.72
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.stereotype.broken.tooManyScopes.TooManyScopeTypesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.74
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.stereotype.inheritance.StereotypeInheritenceTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.32
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.stereotype.interceptor.StereotypeWithMultipleInterceptorBindingsTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.14
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.stereotype.named.DefaultNamedTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 2,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.37
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.stereotype.priority.StereotypeWithPriorityTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 7
+        },
+        "elapsedSeconds": 12.51
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.definition.stereotype.priority.inherited.StereotypeInheritedPriorityTest",
+        "status": "PASSED_DIAGNOSTIC",
+        "exitCode": 0,
+        "counts": {
+          "passed": 1,
+          "failed": 0,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.38
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.deployment.discovery.EmptyBeansXmlDiscoveryTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.34
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.EventTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 7,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.63
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.bindingTypes.EventBindingTypesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 6,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.42
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.broken.observer.beanNotManaged.ObserverMethodOnIncorrectBeanTest",
+        "status": "PASSED_DIAGNOSTIC",
+        "exitCode": 0,
+        "counts": {
+          "passed": 1,
+          "failed": 0,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.19
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.broken.observer.bothObservesAnnotations.ObserverMethodParameterAnnotatedAsSyncAndAsyncTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.74
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.broken.observer.dependentIsConditionalObserver.DependentIsConditionalObserverTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.54
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.broken.observer.inject.DeploymentFailureTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.71
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.broken.observer.isDisposer.ObserverMethodAnnotatedDisposesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.71
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.broken.observer.isProducer.ObserverMethodAnnotatedProducesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.54
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.broken.observer.tooManyParameters.ObserverMethodWithObservesAndObservesAsyncParametersTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.48
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.broken.observer.tooManyParameters.ObserverMethodWithTwoEventParametersTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.8
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.broken.raw.RawEventConstructorInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.93
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.broken.raw.RawEventDisposerInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.89
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.broken.raw.RawEventFieldInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.82
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.broken.raw.RawEventInitMethodInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.12
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.broken.raw.RawEventObserverInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.09
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.broken.raw.RawEventProducerMethodInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.1
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.eventTypes.EventTypesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 5
+        },
+        "elapsedSeconds": 12.79
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.fires.FireEventTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 10,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.77
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.fires.nonbinding.NonBindingTypePassedToFireTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.75
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.fires.sync.FireSyncEventTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 1
+        },
+        "elapsedSeconds": 12.46
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.implicit.ImplicitEventTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 5,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.7
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.lifecycle.StartupShutdownTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.95
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.metadata.EventMetadataTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 2,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.73
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.metadata.broken.initializer.InvalidEventMetadataInjectionPointTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.79
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.metadata.injectionpoint.EventMetadataInjectionPointTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 11
+        },
+        "elapsedSeconds": 12.77
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.ObserverNotificationTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 2,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.88
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.abortProcessing.ObserverExceptionAbortsProcessingTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.01
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.abortProcessing.orderedObservers.ExceptionInOrderedObserversAbortsProcessingTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 1
+        },
+        "elapsedSeconds": 12.94
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.async.basic.MixedObserversTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 5
+        },
+        "elapsedSeconds": 13.05
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.async.executor.FireAsyncWithCustomExecutorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 1
+        },
+        "elapsedSeconds": 12.81
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.async.handlingExceptions.MultipleExceptionsInObserversNotificationTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 3
+        },
+        "elapsedSeconds": 12.68
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.broken.validation.ambiguous.ObserverMethodParameterInjectionValidationTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.17
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.broken.validation.unsatisfied.ObserverMethodParameterInjectionValidationTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.41
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.checkedException.CheckedExceptionWrappedTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.59
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.conditional.ConditionalObserverTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 9
+        },
+        "elapsedSeconds": 12.81
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.inheritance.ObserverInheritanceTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.7
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.method.ObserverMethodTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 8,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.15
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.param.modification.SyncEventModificationTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.53
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.priority.EventObserverOrderingTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 9
+        },
+        "elapsedSeconds": 13.55
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.priority.contextLifecycleEvent.ApplicationContextLifecycleEventObserverOrderingTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 14.07
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.resolve.ResolveEventObserversTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 1,
+          "failed": 11,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.31
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.runtimeException.ObserverExceptionRethrownTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.02
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.observer.wildcardAndTypeVariable.ObserverMethodWithParametertizedTypeTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 4,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.14
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.parameterized.ParameterizedEventTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 17
+        },
+        "elapsedSeconds": 13.55
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.resolve.binding.DuplicateBindingTypesWhenResolvingTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.85
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.resolve.binding.ResolvingChecksBindingTypeMembersTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.02
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.resolve.nonbinding.NonBindingTypesWhenResolvingTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.88
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.resolve.typeWithParameters.CheckTypeParametersWhenResolvingObserversTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 15
+        },
+        "elapsedSeconds": 12.82
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.resolve.typeWithParameters.ChecksEventTypeWhenResolvingTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.49
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.event.select.SelectEventTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 6,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.34
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.injection.BuiltinInterceptorInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.63
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.injection.intercepted.InterceptedBeanConstructorInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.78
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.injection.intercepted.InterceptedBeanFieldInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.87
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.injection.intercepted.InterceptedBeanInitializerInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.67
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.typeparam.BeanTypeParamConstructorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.66
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.typeparam.BeanTypeParamDisposerTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.14
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.typeparam.BeanTypeParamFieldTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.32
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.typeparam.BeanTypeParamInitializerTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.37
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.typeparam.BeanTypeParamProducerTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.44
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.typeparam.interceptor.InterceptedBeanTypeParamConstructorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.41
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.typeparam.interceptor.InterceptedBeanTypeParamFieldTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.39
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.typeparam.interceptor.InterceptedBeanTypeParamInitializerTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.82
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.typeparam.interceptor.InterceptorTypeParamConstructorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.05
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.typeparam.interceptor.InterceptorTypeParamFieldTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.64
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.builtin.metadata.broken.typeparam.interceptor.InterceptorTypeParamInitializerTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.5
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.disposal.method.definition.DisposalMethodDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 5,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.65
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.disposal.method.definition.broken.initializerUnallowed.InitializerUnallowedDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.87
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.disposal.method.definition.broken.interceptor.DisposerMethodOnInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.56
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.disposal.method.definition.broken.multiParams.MultipleDisposeParametersDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 13.23
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.disposal.method.definition.broken.multiple.MultipleDisposerMethodsForProducerMethodTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 13.6
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.disposal.method.definition.broken.observes.ObserverParameterUnallowedDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 13.5
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.disposal.method.definition.broken.producesUnallowed.ProducesUnallowedDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.42
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.disposal.method.definition.broken.unresolvedMethod.UnresolvedDisposalMethodDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.25
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.disposal.method.definition.broken.validation.ambiguous.DisposerMethodParameterInjectionValidationTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.37
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.disposal.method.definition.broken.validation.unsatisfied.DisposerMethodParameterInjectionValidationTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.3
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.disposal.method.definition.inheritance.DisposerMethodInheritanceTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.9
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.disposal.method.definition.invocation.DisposesMethodCalledOnceTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 6,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.85
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.disposal.method.definition.parameters.DisposedParameterPositionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.88
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.initializer.InitializerMethodTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 2,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.95
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.initializer.broken.generic.GenericInitializerMethodTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.35
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.initializer.broken.methodAnnotatedProduces.InitializerMethodAnnotatedProducesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.19
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.initializer.broken.parameterAnnotatedAsyncObserves.ParameterAnnotatedAsyncObservesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.2
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.initializer.broken.parameterAnnotatedDisposes.ParameterAnnotatedDisposesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.15
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.initializer.broken.parameterAnnotatedObserves.ParameterAnnotatedObservesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.12
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.field.definition.ProducerFieldDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 16,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.24
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.field.definition.broken.array.ProducerFieldArrayTypeVariableTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.3
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.field.definition.broken.array.ProducerFieldArrayWildcardTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.29
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.field.definition.broken.inject.InjectAnnotatedProducerFieldTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.42
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.field.definition.broken.interceptor.ProducerFieldOnInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.53
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.field.definition.broken.typeVariable.ProducerFieldWithTypeVariableTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 13.14
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.field.definition.broken.typeVariable2.RequestScopedProducerFieldWithTypeVariableTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 13.1
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.field.definition.broken.wildcard.ProducerFieldTypeWithWildcardTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.73
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.field.lifecycle.ProducerFieldLifecycleTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 7,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.49
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.method.broken.array.ProducerMethodArrayTypeVariableTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.69
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.method.broken.array.ProducerMethodArrayWildcardTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.86
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.method.broken.interceptor.ProducerMethodOnInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.58
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.method.broken.parameterAnnotatedDisposes.ParameterAnnotatedDisposesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.63
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.method.broken.parameterAnnotatedObserves.ParameterAnnotatedObservesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.91
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.method.broken.parameterAnnotatedObservesAsync.ParameterAnnotatedAsyncObservesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 13.01
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.method.broken.parameterizedTypeWithTypeParameter.ParameterizedReturnTypeWithTypeVariableTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.98
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.method.broken.parameterizedTypeWithTypeParameter.ParametrizedReturnTypeWithTypeVariable02Test",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.37
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.method.broken.parameterizedTypeWithWildcard.ParameterizedTypeWithWildcardTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.82
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.method.broken.parameterizedTypeWithWildcard.ParametrizedTypeWithWildcard02Test",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.79
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.method.broken.typeVariableReturnType.TypeVariableReturnTypeTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 13.36
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.method.definition.ProducerMethodDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 21,
+          "skipped": 0
+        },
+        "elapsedSeconds": 14.61
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.method.definition.name.ProducerMethodWithDefaultNameTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 3,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.83
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.producer.method.lifecycle.ProducerMethodLifecycleTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 8,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.79
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.simple.definition.SimpleBeanDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 11,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.64
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.simple.definition.broken.field.InjectedFieldAnnotatedWithProducesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.27
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.simple.definition.constructorHasAsyncObservesParameter.ConstructorHasAsyncObservesParameterTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.69
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.simple.definition.constructorHasDisposesParameter.ConstructorHasDisposesParameterTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.79
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.simple.definition.constructorHasObservesParameter.ConstructorHasObservesParameterTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.85
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.simple.definition.dependentWithPublicField.DependentWithPublicFieldTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.41
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.simple.definition.nonDependentWithPublicStaticField.NonDependentWithPublicStaticFieldTest",
+        "status": "PASSED_DIAGNOSTIC",
+        "exitCode": 0,
+        "counts": {
+          "passed": 1,
+          "failed": 0,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.54
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.simple.definition.tooManyInitializerAnnotatedConstructors.TooManyInitializerAnnotatedConstructorsTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.06
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.simple.lifecycle.SimpleBeanLifecycleTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 19,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.37
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.implementation.simple.lifecycle.unproxyable.UnproxyableManagedBeanTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 5,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.62
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.inheritance.generics.MemberLevelInheritanceTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 4,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.15
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.InterceptorDefinitionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 11,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.09
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.broken.finalClassInterceptor.DependentBeanFinalMethodInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.19
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.broken.finalClassInterceptor.FinalClassClassLevelInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.88
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.broken.finalClassInterceptor.NormalScopedBeanFinalClassInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.05
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.broken.finalClassInterceptor.NormalScopedBeanFinalMethodInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.71
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.broken.nonDependent.NonDependentInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.93
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.broken.observer.InterceptorWithObserverMethodTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 11.97
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.broken.observer.async.InterceptorWithAsyncObserverMethodTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.27
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.inheritance.InterceptorBindingInheritanceTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 6,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.06
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.inheritance.broken.binding.FinalClassWithInheritedClassLevelInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.78
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.inheritance.broken.binding.FinalClassWithInheritedStereotypeInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.6
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.inheritance.broken.binding.FinalMethodWithInheritedClassLevelInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.4
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.inheritance.broken.binding.FinalMethodWithInheritedStereotypeInterceptorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.39
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.interceptorOrder.InterceptorOrderTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.05
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.definition.member.InterceptorBindingTypeWithMemberTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 2,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.97
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.interceptors.invocation.InterceptorInvocationTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 7,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.45
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.binding.members.annotation.BindingAnnotationWithMemberTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 1
+        },
+        "elapsedSeconds": 13.69
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.binding.members.array.BindingAnnotationWithMemberTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 1
+        },
+        "elapsedSeconds": 13.55
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.byname.ResolutionByNameTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.37
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.byname.ambiguous.AmbiguousELNamesTest",
+        "status": "PASSED_DIAGNOSTIC",
+        "exitCode": 0,
+        "counts": {
+          "passed": 1,
+          "failed": 0,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.53
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.byname.broken.duplicity.DuplicitNameTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 13.11
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.byname.broken.injectionPointWithNamed.NamedNonFieldInjectionPointTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.75
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.byname.broken.injectionPointWithNamed2.NamedNonFieldInjectionPointTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.45
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.byname.broken.injectionPointWithNamed3.NamedNonFieldInjectionPointTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.46
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.byname.broken.prefix.ExpandedNamePrefix2Test",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.46
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.byname.broken.prefix.ExpandedNamePrefixTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 13.04
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.byname.broken.prefix.NamePrefixTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.65
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.circular.CircularDependencyTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 7,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.8
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.clientProxy.ClientProxyTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 2,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.84
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.clientProxy.unproxyable.array.ArrayTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 13.49
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.clientProxy.unproxyable.beanConstructor.BeanConstructorWithParametersTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 13.52
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.clientProxy.unproxyable.finalClass.FinalClassTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 13.25
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.clientProxy.unproxyable.finalMethod.NonPrivateNonStaticSuperclassMethodTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.78
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.clientProxy.unproxyable.finalMethod.PackagePrivateFinalMethodNotProxyableTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 13.2
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.clientProxy.unproxyable.finalMethod.PrivateFinalMethodTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 1
+        },
+        "elapsedSeconds": 13.68
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.clientProxy.unproxyable.finalMethod.ProtectedFinalMethodNotProxyableTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.34
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.clientProxy.unproxyable.finalMethod.PublicFinalMethodNotProxyableTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.8
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.clientProxy.unproxyable.finalMethod.StaticFinalMethodTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 1
+        },
+        "elapsedSeconds": 13.16
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.clientProxy.unproxyable.interceptor.InterceptedBeanProxyTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.79
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.clientProxy.unproxyable.primitive.UnproxyableTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.42
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.clientProxy.unproxyable.privateConstructor.PrivateConstructorTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.88
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.dependency.resolution.AmbiguousDependencyResolutionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 2,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.61
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.dependency.resolution.broken.ambiguous.AmbiguousDependencyTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 13.14
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.dependency.resolution.broken.unsatisfied.UnsatisfiedDependencyTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.85
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.dynamic.DynamicLookupTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 13,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.93
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.dynamic.broken.raw.RawInstanceConstructorInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.81
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.dynamic.broken.raw.RawInstanceDisposerInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.92
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.dynamic.broken.raw.RawInstanceFieldInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.82
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.dynamic.broken.raw.RawInstanceInitMethodInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 13.61
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.dynamic.broken.raw.RawInstanceObserverInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 13.03
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.dynamic.broken.raw.RawInstanceProducerMethodInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 13.1
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.dynamic.builtin.BuiltinInstanceTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 3,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.66
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.dynamic.destroy.dependent.DestroyingDependentInstanceTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 2,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.66
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.dynamic.destroy.normal.DestroyingNormalScopedInstanceTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 4,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.68
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.dynamic.handle.InstanceHandleTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 4,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.57
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.injection.any.AnyInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.67
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.injection.parameterized.ParameterizedTypesInjectionToParameterizedWithActualTypeTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 1
+        },
+        "elapsedSeconds": 13.3
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.injection.parameterized.ParameterizedTypesInjectionToParameterizedWithTypeVariableTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 1
+        },
+        "elapsedSeconds": 13.82
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.injection.parameterized.ParameterizedTypesInjectionToParameterizedWithTypeVariableUpperBoundTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 1
+        },
+        "elapsedSeconds": 13.45
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.injection.parameterized.ParameterizedTypesInjectionToParameterizedWithWildcardTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 1
+        },
+        "elapsedSeconds": 13.39
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.injection.parameterized.ParameterizedTypesInjectionToRawTypeTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 1
+        },
+        "elapsedSeconds": 13.42
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.injection.parameterized.broken.raw.ParameterizedTypesInjectionRawAmbiguousTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.77
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.injection.parameterized.multiple.bounds.ParameterizedTypesWithTypeVariableWithMultipleBoundsTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 5
+        },
+        "elapsedSeconds": 13.68
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.injectionpoint.InjectionPointTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 13,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.8
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.injectionpoint.broken.disposer.DisposerInjectionPointMetadataTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 13.08
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.injectionpoint.broken.normal.scope.NormalScopedBeanWithInjectionPoint",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 13.01
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.injectionpoint.dynamic.DynamicInjectionPointTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 13
+        },
+        "elapsedSeconds": 13.52
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.injectionpoint.named.NamedAtInjectionPointTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 1
+        },
+        "elapsedSeconds": 13.76
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.injectionpoint.requiredtype.LegalRequiredTypeTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 1
+        },
+        "elapsedSeconds": 13.78
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.manager.ManagerTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 6,
+          "skipped": 0
+        },
+        "elapsedSeconds": 13.87
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.typesafe.resolution.ResolutionByTypeTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 12,
+          "skipped": 0
+        },
+        "elapsedSeconds": 14.2
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.typesafe.resolution.broken.disabled.DisabledBeanNotAvailableForInjectionTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 13.03
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.typesafe.resolution.broken.type.variable.TypeVariableInjectionPointTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 13.46
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.typesafe.resolution.interceptor.InterceptorNotResolvedInterModuleTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.76
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.typesafe.resolution.interceptor.InterceptorNotResolvedTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 2
+        },
+        "elapsedSeconds": 12.5
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.typesafe.resolution.parameterized.AssignabilityOfRawAndParameterizedTypesTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 11,
+          "skipped": 0
+        },
+        "elapsedSeconds": 12.52
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.typesafe.resolution.parameterized.raw.RawBeanTypeParameterizedRequiredTypeTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 2,
+          "skipped": 0
+        },
+        "elapsedSeconds": 11.77
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.lookup.typesafe.resolution.primitive.PrimitiveInjectionPointTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 1,
+          "skipped": 1
+        },
+        "elapsedSeconds": 11.6
+      },
+      {
+        "selectedClass": "org.jboss.cdi.tck.tests.vetoed.VetoedTest",
+        "status": "FAILED",
+        "exitCode": 1,
+        "counts": {
+          "passed": 0,
+          "failed": 2,
+          "skipped": 0
+        },
+        "elapsedSeconds": 11.58
+      }
+    ],
+    "elapsedSeconds": 472.21,
+    "run": "cdi-jpms-lite-2026-10-23"
+  }
+}
