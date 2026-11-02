@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "guicedee": "2.4.1",
+  "guicedee": "2.4.2",
   "jdk": 25,
   "baseline": "MicroProfile 7.1 component coverage; JWT 2.2 additionally matches GuicedEE API",
   "suites": [

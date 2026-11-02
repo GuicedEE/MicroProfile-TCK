@@ -15,35 +15,35 @@
     <tck.fork.timeout>240</tck.fork.timeout>
     <tck.jvm.args />
   </properties>
-  <modules>
-    <module>harness</module>
-    <module>config</module>
-    <module>health</module>
-    <module>fault-tolerance</module>
-    <module>jwt</module>
-    <module>openapi</module>
-    <module>rest-client</module>
-    <module>context-propagation</module>
-    <module>graphql</module>
-    <module>reactive-messaging</module>
-    <module>reactive-streams</module>
-    <module>lra</module>
-    <module>metrics-api</module>
-    <module>metrics-rest</module>
-    <module>metrics-optional</module>
-    <module>telemetry-tracing</module>
-    <module>telemetry-metrics</module>
-    <module>telemetry-logs</module>
-    <module>core-profile</module>
-    <module>cdi-lite</module>
-    <module>cdi-lang-model</module>
-    <module>jakarta-rest</module>
-    <module>jsonb</module>
-    <module>jsonp</module>
-    <module>jsonp-pluggability</module>
-    <module>jakarta-inject</module>
-    <module>annotations-signature</module>
-  </modules>
+    <subprojects>
+        <subproject>harness</subproject>
+        <subproject>config</subproject>
+        <subproject>health</subproject>
+        <subproject>fault-tolerance</subproject>
+        <subproject>jwt</subproject>
+        <subproject>openapi</subproject>
+        <subproject>rest-client</subproject>
+        <subproject>context-propagation</subproject>
+        <subproject>graphql</subproject>
+        <subproject>reactive-messaging</subproject>
+        <subproject>reactive-streams</subproject>
+        <subproject>lra</subproject>
+        <subproject>metrics-api</subproject>
+        <subproject>metrics-rest</subproject>
+        <subproject>metrics-optional</subproject>
+        <subproject>telemetry-tracing</subproject>
+        <subproject>telemetry-metrics</subproject>
+        <subproject>telemetry-logs</subproject>
+        <subproject>core-profile</subproject>
+        <subproject>cdi-lite</subproject>
+        <subproject>cdi-lang-model</subproject>
+        <subproject>jakarta-rest</subproject>
+        <subproject>jsonb</subproject>
+        <subproject>jsonp</subproject>
+        <subproject>jsonp-pluggability</subproject>
+        <subproject>jakarta-inject</subproject>
+        <subproject>annotations-signature</subproject>
+    </subprojects>
   <dependencyManagement>
     <dependencies>
       <dependency>
