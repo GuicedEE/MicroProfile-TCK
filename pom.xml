@@ -7,7 +7,7 @@
   <packaging>pom</packaging>
   <name>GuicedEE MicroProfile TCK</name>
   <properties>
-    <guicedee.version>2.5.0</guicedee.version>
+    <guicedee.version>2.5.1</guicedee.version>
     <maven.compiler.release>25</maven.compiler.release>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <arquillian.version>1.10.2.Final</arquillian.version>
